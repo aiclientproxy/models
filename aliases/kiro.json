@@ -2,32 +2,65 @@
   "$schema": "../schema/alias.schema.json",
   "provider": "kiro",
   "description": "Kiro/CodeWhisperer 服务的模型别名映射（基于 AWS Bedrock）",
+  "models": [
+    "claude-opus-4-5",
+    "claude-opus-4-5-20251101",
+    "claude-haiku-4-5",
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-4-5",
+    "claude-sonnet-4-5-20250929",
+    "claude-sonnet-4-20250514",
+    "claude-3-7-sonnet-20250219"
+  ],
   "aliases": {
-    "anthropic.claude-3-5-sonnet-20241022-v2:0": {
-      "actual": "claude-3-5-sonnet-20241022",
+    "claude-opus-4-5": {
+      "actual": "claude-opus-4-5-20251101",
+      "internal_name": "claude-opus-4.5",
       "provider": "anthropic",
-      "description": "Claude 3.5 Sonnet via Bedrock"
+      "description": "Claude Opus 4.5 via Kiro"
     },
-    "anthropic.claude-3-5-haiku-20241022-v1:0": {
-      "actual": "claude-3-5-haiku-20241022",
+    "claude-opus-4-5-20251101": {
+      "actual": "claude-opus-4-5-20251101",
+      "internal_name": "claude-opus-4.5",
       "provider": "anthropic",
-      "description": "Claude 3.5 Haiku via Bedrock"
+      "description": "Claude Opus 4.5 via Kiro"
     },
-    "anthropic.claude-3-opus-20240229-v1:0": {
-      "actual": "claude-3-opus-20240229",
+    "claude-haiku-4-5": {
+      "actual": "claude-haiku-4-5-20251001",
+      "internal_name": "claude-haiku-4.5",
       "provider": "anthropic",
-      "description": "Claude 3 Opus via Bedrock"
+      "description": "Claude Haiku 4.5 via Kiro"
     },
-    "anthropic.claude-3-sonnet-20240229-v1:0": {
-      "actual": "claude-3-sonnet-20240229",
+    "claude-haiku-4-5-20251001": {
+      "actual": "claude-haiku-4-5-20251001",
+      "internal_name": "claude-haiku-4.5",
       "provider": "anthropic",
-      "description": "Claude 3 Sonnet via Bedrock"
+      "description": "Claude Haiku 4.5 via Kiro"
     },
-    "anthropic.claude-3-haiku-20240307-v1:0": {
-      "actual": "claude-3-haiku-20240307",
+    "claude-sonnet-4-5": {
+      "actual": "claude-sonnet-4-5-20250929",
+      "internal_name": "CLAUDE_SONNET_4_5_20250929_V1_0",
       "provider": "anthropic",
-      "description": "Claude 3 Haiku via Bedrock"
+      "description": "Claude Sonnet 4.5 via Kiro"
+    },
+    "claude-sonnet-4-5-20250929": {
+      "actual": "claude-sonnet-4-5-20250929",
+      "internal_name": "CLAUDE_SONNET_4_5_20250929_V1_0",
+      "provider": "anthropic",
+      "description": "Claude Sonnet 4.5 via Kiro"
+    },
+    "claude-sonnet-4-20250514": {
+      "actual": "claude-sonnet-4-20250514",
+      "internal_name": "CLAUDE_SONNET_4_20250514_V1_0",
+      "provider": "anthropic",
+      "description": "Claude Sonnet 4 via Kiro"
+    },
+    "claude-3-7-sonnet-20250219": {
+      "actual": "claude-3-7-sonnet-20250219",
+      "internal_name": "CLAUDE_3_7_SONNET_20250219_V1_0",
+      "provider": "anthropic",
+      "description": "Claude 3.7 Sonnet via Kiro"
     }
   },
-  "updated_at": "2025-01-06T00:00:00Z"
+  "updated_at": "2026-01-07T00:00:00Z"
 }

@@ -2,12 +2,22 @@
   "$schema": "../schema/alias.schema.json",
   "provider": "antigravity",
   "description": "Antigravity 中转服务的模型别名映射",
+  "models": [
+    "gemini-2.5-computer-use-preview-10-2025",
+    "gemini-3-pro-image-preview",
+    "gemini-3-pro-preview",
+    "gemini-3-flash-preview",
+    "gemini-2.5-flash-preview",
+    "gemini-claude-sonnet-4-5",
+    "gemini-claude-sonnet-4-5-thinking",
+    "gemini-claude-opus-4-5-thinking"
+  ],
   "aliases": {
-    "gemini-3-pro-preview": {
-      "actual": "gemini-3-pro-high",
-      "internal_name": "gemini-3-pro-high",
+    "gemini-2.5-computer-use-preview-10-2025": {
+      "actual": "gemini-2.5-computer-use",
+      "internal_name": "rev19-uic3-1p",
       "provider": "google",
-      "description": "Gemini 3 Pro 预览版"
+      "description": "Gemini 2.5 Computer Use 预览版"
     },
     "gemini-3-pro-image-preview": {
       "actual": "gemini-3-pro-image",
@@ -15,23 +25,23 @@
       "provider": "google",
       "description": "Gemini 3 Pro 图像版"
     },
+    "gemini-3-pro-preview": {
+      "actual": "gemini-3-pro",
+      "internal_name": "gemini-3-pro-high",
+      "provider": "google",
+      "description": "Gemini 3 Pro 预览版"
+    },
     "gemini-3-flash-preview": {
       "actual": "gemini-3-flash",
       "internal_name": "gemini-3-flash",
       "provider": "google",
       "description": "Gemini 3 Flash 预览版"
     },
-    "gemini-2.5-flash": {
+    "gemini-2.5-flash-preview": {
       "actual": "gemini-2.5-flash",
       "internal_name": "gemini-2.5-flash",
       "provider": "google",
-      "description": "Gemini 2.5 Flash"
-    },
-    "gemini-2.5-computer-use-preview-10-2025": {
-      "actual": "gemini-2.5-computer-use",
-      "internal_name": "rev19-uic3-1p",
-      "provider": "google",
-      "description": "Gemini 2.5 Computer Use 预览版"
+      "description": "Gemini 2.5 Flash 预览版"
     },
     "gemini-claude-sonnet-4-5": {
       "actual": "claude-sonnet-4-5-20250929",
@@ -52,5 +62,5 @@
       "description": "Claude Opus 4.5 思考模式"
     }
   },
-  "updated_at": "2025-01-06T00:00:00Z"
+  "updated_at": "2026-01-07T00:00:00Z"
 }
