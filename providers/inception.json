@@ -1,0 +1,67 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "inception",
+    "name": "Inception"
+  },
+  "models": [
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "family": "mercury",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 1,
+        "cache_read": 0.25,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-06-26",
+      "is_latest": false
+    },
+    {
+      "id": "mercury-coder",
+      "name": "Mercury Coder",
+      "family": "mercury-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 1,
+        "cache_read": 0.25,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-02-26",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.369Z",
+  "source": "models.dev"
+}

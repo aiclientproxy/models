@@ -1,0 +1,1053 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "openai",
+    "name": "OpenAI"
+  },
+  "models": [
+    {
+      "id": "gpt-5.2-pro",
+      "name": "GPT-5.2 Pro",
+      "family": "gpt-5-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 21,
+        "output": 168,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.2-chat-latest",
+      "name": "GPT-5.2 Chat",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": true
+    },
+    {
+      "id": "gpt-5.2",
+      "name": "GPT-5.2",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "name": "GPT-5.1 Codex",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "name": "GPT-5.1 Codex mini",
+      "family": "gpt-5-codex-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.1",
+      "name": "GPT-5.1",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "name": "GPT-5.1 Codex Max",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5.1-chat-latest",
+      "name": "GPT-5.1 Chat",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": true
+    },
+    {
+      "id": "gpt-5-pro",
+      "name": "GPT-5 Pro",
+      "family": "gpt-5-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 120,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 272000
+      },
+      "status": "active",
+      "release_date": "2025-10-06",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5-codex",
+      "name": "GPT-5-Codex",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-09-15",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5-nano",
+      "name": "GPT-5 Nano",
+      "family": "gpt-5-nano",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.05,
+        "output": 0.4,
+        "cache_read": 0.01,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "family": "gpt-5-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "name": "GPT-5 Chat (latest)",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": true
+    },
+    {
+      "id": "gpt-5",
+      "name": "GPT-5",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "o3-pro",
+      "name": "o3-pro",
+      "family": "o3-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 20,
+        "output": 80,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-06-10",
+      "is_latest": false
+    },
+    {
+      "id": "codex-mini-latest",
+      "name": "Codex Mini",
+      "family": "codex",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.5,
+        "output": 6,
+        "cache_read": 0.375,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-05-16",
+      "is_latest": true
+    },
+    {
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "family": "o4-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.28,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "o3",
+      "name": "o3",
+      "family": "o3",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4.1-nano",
+      "name": "GPT-4.1 nano",
+      "family": "gpt-4.1-nano",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1047576,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-14",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "name": "GPT-4.1 mini",
+      "family": "gpt-4.1-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "cache_read": 0.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1047576,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-14",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "family": "gpt-4.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1047576,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-14",
+      "is_latest": false
+    },
+    {
+      "id": "o1-pro",
+      "name": "o1-pro",
+      "family": "o1-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 150,
+        "output": 600,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-03-19",
+      "is_latest": false
+    },
+    {
+      "id": "o3-mini",
+      "name": "o3-mini",
+      "family": "o3-mini",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.55,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-12-20",
+      "is_latest": false
+    },
+    {
+      "id": "o1",
+      "name": "o1",
+      "family": "o1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 60,
+        "cache_read": 7.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-12-05",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "name": "GPT-4o (2024-11-20)",
+      "family": "gpt-4o",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-11-20",
+      "is_latest": false
+    },
+    {
+      "id": "o1-preview",
+      "name": "o1-preview",
+      "family": "o1-preview",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 60,
+        "cache_read": 7.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2024-09-12",
+      "is_latest": false
+    },
+    {
+      "id": "o1-mini",
+      "name": "o1-mini",
+      "family": "o1-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.55,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2024-09-12",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "name": "GPT-4o (2024-08-06)",
+      "family": "gpt-4o",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-08-06",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "family": "gpt-4o-mini",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.08,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-07-18",
+      "is_latest": false
+    },
+    {
+      "id": "o3-deep-research",
+      "name": "o3-deep-research",
+      "family": "o3",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 10,
+        "output": 40,
+        "cache_read": 2.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-06-26",
+      "is_latest": false
+    },
+    {
+      "id": "o4-mini-deep-research",
+      "name": "o4-mini-deep-research",
+      "family": "o4-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-06-26",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4o-2024-05-13",
+      "name": "GPT-4o (2024-05-13)",
+      "family": "gpt-4o",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 5,
+        "output": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-05-13",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "family": "gpt-4o",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-05-13",
+      "is_latest": false
+    },
+    {
+      "id": "text-embedding-3-small",
+      "name": "text-embedding-3-small",
+      "family": "text-embedding-3-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.02,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8191,
+        "max_output": 1536
+      },
+      "status": "active",
+      "release_date": "2024-01-25",
+      "is_latest": false
+    },
+    {
+      "id": "text-embedding-3-large",
+      "name": "text-embedding-3-large",
+      "family": "text-embedding-3-large",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.13,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8191,
+        "max_output": 3072
+      },
+      "status": "active",
+      "release_date": "2024-01-25",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4",
+      "name": "GPT-4",
+      "family": "gpt-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 30,
+        "output": 60,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2023-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "family": "gpt-4-turbo",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 10,
+        "output": 30,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2023-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "name": "GPT-3.5-turbo",
+      "family": "gpt-3.5-turbo",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16385,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2023-03-01",
+      "is_latest": false
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "name": "text-embedding-ada-002",
+      "family": "text-embedding-ada",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 1536
+      },
+      "status": "active",
+      "release_date": "2022-12-15",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.369Z",
+  "source": "models.dev"
+}

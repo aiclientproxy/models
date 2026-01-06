@@ -1,0 +1,271 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "wandb",
+    "name": "Weights & Biases"
+  },
+  "models": [
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "name": "Qwen3-235B-A22B-Thinking-2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-07-25",
+      "is_latest": false
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "name": "Qwen3-Coder-480B-A35B-Instruct",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 1.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 66536
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "name": "Kimi-K2-Instruct",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.35,
+        "output": 4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-07-14",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "name": "DeepSeek-R1-0528",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.35,
+        "output": 5.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 161000,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-05-28",
+      "is_latest": false
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen3 235B A22B Instruct 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "name": "DeepSeek-V3-0324",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.14,
+        "output": 2.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 161000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-24",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "name": "Llama 4 Scout 17B 16E Instruct",
+      "family": "llama-4-scout",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.17,
+        "output": 0.66,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 64000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-31",
+      "is_latest": false
+    },
+    {
+      "id": "microsoft/Phi-4-mini-instruct",
+      "name": "Phi-4-mini-instruct",
+      "family": "phi-4",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.08,
+        "output": 0.35,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct",
+      "family": "llama-3.3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.71,
+        "output": 0.71,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2024-12-06",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/Llama-3.1-8B-Instruct",
+      "name": "Meta-Llama-3.1-8B-Instruct",
+      "family": "llama-3.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.22,
+        "output": 0.22,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2024-07-23",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.369Z",
+  "source": "models.dev"
+}

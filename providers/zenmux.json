@@ -1,0 +1,1346 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "zenmux",
+    "name": "ZenMux"
+  },
+  "models": [
+    {
+      "id": "xiaomi/mimo-v2-flash-free",
+      "name": "MiMo-V2-Flash Free",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-31",
+      "is_latest": false
+    },
+    {
+      "id": "kuaishou/kat-coder-pro-v1-free",
+      "name": "KAT-Coder-Pro-V1 Free",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-31",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6v-flash-free",
+      "name": "GLM 4.6V Flash (Free)",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-30",
+      "is_latest": false
+    },
+    {
+      "id": "minimax/minimax-m2.1",
+      "name": "MiniMax M2.1",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-23",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "name": "GLM 4.7",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 1.14,
+        "cache_read": 0.06,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-23",
+      "is_latest": false
+    },
+    {
+      "id": "stepfun/step-3",
+      "name": "Step-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.21,
+        "output": 0.57,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 65536,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-18",
+      "is_latest": false
+    },
+    {
+      "id": "volcengine/doubao-seed-1.8",
+      "name": "Doubao-Seed-1.8",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.11,
+        "output": 0.28,
+        "cache_read": 0.02,
+        "cache_write": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-18",
+      "is_latest": false
+    },
+    {
+      "id": "xiaomi/mimo-v2-flash",
+      "name": "MiMo-V2-Flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-17",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.5,
+        "output": 3,
+        "cache_read": 0.05,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-17",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-3-flash-preview-free",
+      "name": "Gemini 3 Flash Preview Free",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-17",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.2",
+      "name": "GPT-5.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.17,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "name": "DeepSeek V3.2",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.43,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-08",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6v-flash",
+      "name": "GLM 4.6V FlashX",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-08",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6v",
+      "name": "GLM 4.6V",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.14,
+        "output": 0.42,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-08",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "name": "DeepSeek-V3.2-Exp",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.22,
+        "output": 0.33,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-26",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4.5",
+      "name": "Claude Opus 4.5",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-25",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4.1-fast-non-reasoning",
+      "name": "Grok 4.1 Fast Non Reasoning",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 2000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-20",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4.1-fast",
+      "name": "Grok 4.1 Fast",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 2000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-20",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-3-pro-preview",
+      "name": "Gemini 3 Pro Preview",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 12,
+        "cache_read": 0.2,
+        "cache_write": 4.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-18",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "name": "GPT-5.1-Codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-codex-mini",
+      "name": "GPT-5.1-Codex-Mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "name": "GPT-5.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-chat",
+      "name": "GPT-5.1 Chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "baidu/ernie-5.0-thinking-preview",
+      "name": "ERNIE-5.0-Thinking-Preview",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.84,
+        "output": 3.37,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "volcengine/doubao-seed-code",
+      "name": "Doubao-Seed-Code",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.17,
+        "output": 1.12,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-11",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking-turbo",
+      "name": "Kimi K2 Thinking Turbo",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.15,
+        "output": 8,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax M2",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-28",
+      "is_latest": false
+    },
+    {
+      "id": "kuaishou/kat-coder-pro-v1",
+      "name": "KAT-Coder-Pro-V1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-24",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-reasoner",
+      "name": "DeepSeek-V3.2 (Thinking Mode)",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.42,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-23",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Claude Haiku 4.5",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-15",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-codex",
+      "name": "GPT-5 Codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-13",
+      "is_latest": false
+    },
+    {
+      "id": "inclusionai/ring-1t",
+      "name": "Ring-1T",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.56,
+        "output": 2.24,
+        "cache_read": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-01",
+      "is_latest": false
+    },
+    {
+      "id": "inclusionai/ling-1t",
+      "name": "Ling-1T",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.56,
+        "output": 2.24,
+        "cache_read": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-01",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "GLM 4.6",
+      "family": "glm-4.6",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 1.54,
+        "cache_read": 0.07,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-09-30",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "name": "Claude Sonnet 4.5",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-29",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4-fast",
+      "name": "Grok 4 Fast",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 2000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-22",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-code-fast-1",
+      "name": "Grok Code Fast 1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 1.5,
+        "cache_read": 0.02,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-19",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "name": "DeepSeek-V3.2 (Non-thinking Mode)",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.42,
+        "cache_read": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-10",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder-plus",
+      "name": "Qwen3-Coder-Plus",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-10",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "name": "Kimi K2 0905",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262100,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-09",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "name": "GLM 4.5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 1.54,
+        "cache_read": 0.07,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-09",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "name": "GLM 4.5 Air",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.11,
+        "output": 0.56,
+        "cache_read": 0.02,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-09",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4",
+      "name": "Grok 4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-19",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 2.5,
+        "cache_read": 0.07,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-18",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "name": "Gemini 2.5 Flash Lite",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.03,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-14",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4",
+      "name": "Claude Opus 4",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5",
+      "name": "GPT-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-13",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Claude Sonnet 4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-08-13",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "name": "Claude Opus 4.1",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "family": "gemini-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.31,
+        "cache_write": 4.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-03-20",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.371Z",
+  "source": "models.dev"
+}

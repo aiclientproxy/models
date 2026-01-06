@@ -1,0 +1,533 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "iflowcn",
+    "name": "iFlow"
+  },
+  "models": [
+    {
+      "id": "deepseek-v3.2-chat",
+      "name": "DeepSeek-V3.2",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "minimax-m2",
+      "name": "MiniMax-M2",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 131100
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "name": "Kimi-K2-Thinking",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-0905",
+      "name": "Kimi-K2-0905",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-coder",
+      "name": "Qwen3-Coder-480B-A35B",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-07-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen3-235B-A22B-Thinking",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-07-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-235b-a22b-instruct",
+      "name": "Qwen3-235B-A22B-Instruct",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-07-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-coder-plus",
+      "name": "Qwen3-Coder-Plus",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-07-01",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek-R1",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-01-20",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-v3.1",
+      "name": "DeepSeek-V3.1-Terminus",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-vl-plus",
+      "name": "Qwen3-VL-Plus",
+      "family": "qwen3-vl",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-max",
+      "name": "Qwen3-Max",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-v3.2",
+      "name": "DeepSeek-V3.2-Exp",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-max-preview",
+      "name": "Qwen3-Max-Preview",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek-V3",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2024-12-26",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi-K2",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2024-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-235b",
+      "name": "Qwen3-235B-A22B",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2024-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "glm-4.6",
+      "name": "GLM-4.6",
+      "family": "glm-4.6",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2024-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen3-32b",
+      "name": "Qwen3-32B",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2024-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "tstars2.0",
+      "name": "TStars-2.0",
+      "family": "tstars2.0",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2024-01-01",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.371Z",
+  "source": "models.dev"
+}

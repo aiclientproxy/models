@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "stepfun",
+    "name": "阶跃星辰",
+    "website": "https://www.stepfun.com",
+    "api_docs": "https://platform.stepfun.com/docs"
+  },
+  "models": [
+    {
+      "id": "step-2-16k",
+      "name": "Step 2 16K",
+      "family": "step",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 38.0,
+        "output": 120.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 16384,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-09-01",
+      "is_latest": true,
+      "description": "StepFun flagship model",
+      "description_zh": "阶跃星辰旗舰模型"
+    },
+    {
+      "id": "step-1-128k",
+      "name": "Step 1 128K",
+      "family": "step",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 40.0,
+        "output": 100.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-06-01",
+      "is_latest": true,
+      "description": "StepFun long context model",
+      "description_zh": "阶跃星辰长上下文模型"
+    },
+    {
+      "id": "step-1-flash",
+      "name": "Step 1 Flash",
+      "family": "step",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.0,
+        "output": 4.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-06-01",
+      "is_latest": true,
+      "description": "StepFun fast model",
+      "description_zh": "阶跃星辰快速模型"
+    }
+  ],
+  "updated_at": "2025-01-06T00:00:00Z",
+  "source": "manual"
+}

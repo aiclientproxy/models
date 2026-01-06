@@ -1,0 +1,91 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "cerebras",
+    "name": "Cerebras"
+  },
+  "models": [
+    {
+      "id": "zai-glm-4.6",
+      "name": "Z.AI GLM-4.6",
+      "family": "glm-4.6",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 40960
+      },
+      "status": "active",
+      "release_date": "2025-11-05",
+      "is_latest": false
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "GPT OSS 120B",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 0.69,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "qwen-3-235b-a22b-instruct-2507",
+      "name": "Qwen 3 235B Instruct",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 1.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-07-22",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.378Z",
+  "source": "models.dev"
+}

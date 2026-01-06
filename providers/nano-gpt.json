@@ -1,0 +1,557 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "nano-gpt",
+    "name": "NanoGPT"
+  },
+  "models": [
+    {
+      "id": "minimax/minimax-m2.1",
+      "name": "Minimax M2.1",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-23",
+      "is_latest": false
+    },
+    {
+      "id": "zai-org/glm-4.7",
+      "name": "GLM 4.7",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-22",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-2-123b-instruct-2512",
+      "name": "Devstral 2 123b Instruct 2512",
+      "family": "mistral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-large-3-675b-instruct-2512",
+      "name": "Mistral Large 3 675b Instruct 2512",
+      "family": "mistral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-02",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.2:thinking",
+      "name": "Deepseek V3.2 Thinking",
+      "family": "deepseek",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/ministral-14b-instruct-2512",
+      "name": "Ministral 14b Instruct 2512",
+      "family": "mistral",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "nvidia/llama-3_3-nemotron-super-49b-v1_5",
+      "name": "Llama 3 3 Nemotron Super 49B V1 5",
+      "family": "llama",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-08-08",
+      "is_latest": false
+    },
+    {
+      "id": "zai-org/glm-4.5-air",
+      "name": "GLM 4.5 Air",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-07-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen3 235B A22B Thinking 2507",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-07-01",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "GPT Oss 120b",
+      "family": "gpt",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-06-23",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6:thinking",
+      "name": "GLM 4.6 Thinking",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-04-07",
+      "is_latest": false
+    },
+    {
+      "id": "zai-org/glm-4.7:thinking",
+      "name": "GLM 4.7 Thinking",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-04-07",
+      "is_latest": false
+    },
+    {
+      "id": "zai-org/glm-4.5-air:thinking",
+      "name": "GLM 4.5 Air Thinking",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-04-07",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "family": "llama",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-04-05",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "name": "Deepseek R1",
+      "family": "deepseek",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-20",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "name": "Qwen3 Coder",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 106000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-15",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Llama 3.3 70b Instruct",
+      "family": "llama",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-12-06",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "GLM 4.6",
+      "family": "glm",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-11-15",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "family": "kimi",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-11-01",
+      "is_latest": false
+    },
+    {
+      "id": "nousresearch/hermes-4-405b:thinking",
+      "name": "Hermes 4 405b Thinking",
+      "family": "hermes",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-08-13",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-instruct",
+      "name": "Kimi K2 Instruct",
+      "family": "kimi",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-07-18",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.373Z",
+  "source": "models.dev"
+}

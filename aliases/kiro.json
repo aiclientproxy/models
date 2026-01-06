@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/alias.schema.json",
+  "provider": "kiro",
+  "description": "Kiro/CodeWhisperer 服务的模型别名映射（基于 AWS Bedrock）",
+  "aliases": {
+    "anthropic.claude-3-5-sonnet-20241022-v2:0": {
+      "actual": "claude-3-5-sonnet-20241022",
+      "provider": "anthropic",
+      "description": "Claude 3.5 Sonnet via Bedrock"
+    },
+    "anthropic.claude-3-5-haiku-20241022-v1:0": {
+      "actual": "claude-3-5-haiku-20241022",
+      "provider": "anthropic",
+      "description": "Claude 3.5 Haiku via Bedrock"
+    },
+    "anthropic.claude-3-opus-20240229-v1:0": {
+      "actual": "claude-3-opus-20240229",
+      "provider": "anthropic",
+      "description": "Claude 3 Opus via Bedrock"
+    },
+    "anthropic.claude-3-sonnet-20240229-v1:0": {
+      "actual": "claude-3-sonnet-20240229",
+      "provider": "anthropic",
+      "description": "Claude 3 Sonnet via Bedrock"
+    },
+    "anthropic.claude-3-haiku-20240307-v1:0": {
+      "actual": "claude-3-haiku-20240307",
+      "provider": "anthropic",
+      "description": "Claude 3 Haiku via Bedrock"
+    }
+  },
+  "updated_at": "2025-01-06T00:00:00Z"
+}

@@ -1,0 +1,1707 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "cloudflare-ai-gateway",
+    "name": "Cloudflare AI Gateway"
+  },
+  "models": [
+    {
+      "id": "openai/gpt-5.2",
+      "name": "GPT-5.2",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4-5",
+      "name": "Claude Opus 4.5 (latest)",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-11-24",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/myshell-ai/melotts",
+      "name": "MyShell MeloTTS",
+      "family": "melotts",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/pipecat-ai/smart-turn-v2",
+      "name": "Pipecat Smart Turn v2",
+      "family": "smart-turn",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/qwen/qwen3-30b-a3b-fp8",
+      "name": "Qwen3 30B A3B FP8",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.051,
+        "output": 0.34,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/qwen/qwen3-embedding-0.6b",
+      "name": "Qwen3 Embedding 0.6B",
+      "family": "qwen3-embedding",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.012,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/deepgram/aura-2-es",
+      "name": "Deepgram Aura 2 (ES)",
+      "family": "aura-2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/deepgram/aura-2-en",
+      "name": "Deepgram Aura 2 (EN)",
+      "family": "aura-2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/deepgram/nova-3",
+      "name": "Deepgram Nova 3",
+      "family": "nova",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "name": "GPT-5.1 Codex",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "name": "GPT-5.1",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/ibm-granite/granite-4.0-h-micro",
+      "name": "IBM Granite 4.0 H Micro",
+      "family": "granite-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.017,
+        "output": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-10-15",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-haiku-4-5",
+      "name": "Claude Haiku 4.5 (latest)",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-15",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5 (latest)",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-29",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/pfnet/plamo-embedding-1b",
+      "name": "PLaMo Embedding 1B",
+      "family": "plamo-embedding",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.019,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/ai4bharat/indictrans2-en-indic-1B",
+      "name": "IndicTrans2 EN-Indic 1B",
+      "family": "indictrans2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.34,
+        "output": 0.34,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+      "name": "Gemma SEA-LION v4 27B IT",
+      "family": "gemma-sea-lion",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 0.56,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/openai/gpt-oss-120b",
+      "name": "GPT OSS 120B",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 0.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4-1",
+      "name": "Claude Opus 4.1 (latest)",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o3-pro",
+      "name": "o3-pro",
+      "family": "o3-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 20,
+        "output": 80,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-06-10",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4",
+      "name": "Claude Opus 4 (latest)",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-05-22",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Claude Sonnet 4 (latest)",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-05-22",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct",
+      "name": "Llama 4 Scout 17B 16E Instruct",
+      "family": "llama-4-scout",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.27,
+        "output": 0.85,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o4-mini",
+      "name": "o4-mini",
+      "family": "o4-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.28,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o3",
+      "name": "o3",
+      "family": "o3",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/google/gemma-3-12b-it",
+      "name": "Gemma 3 12B IT",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 0.56,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-11",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/qwen/qwen2.5-coder-32b-instruct",
+      "name": "Qwen 2.5 Coder 32B Instruct",
+      "family": "qwen2.5-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.66,
+        "output": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-11",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/qwen/qwq-32b",
+      "name": "QwQ 32B",
+      "family": "qwq",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.66,
+        "output": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-11",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral Small 3.1 24B Instruct",
+      "family": "mistral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 0.56,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-11",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/facebook/bart-large-cnn",
+      "name": "BART Large CNN",
+      "family": "bart",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-09",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/baai/bge-reranker-base",
+      "name": "BGE Reranker Base",
+      "family": "bge-reranker",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.0031,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-09",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/mistral/mistral-7b-instruct-v0.1",
+      "name": "Mistral 7B Instruct v0.1",
+      "family": "mistral-7b",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.11,
+        "output": 0.19,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/huggingface/distilbert-sst-2-int8",
+      "name": "DistilBERT SST-2 INT8",
+      "family": "distilbert",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.026,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "family": "llama-3.2-vision",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.049,
+        "output": 0.68,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.1-8b-instruct-fp8",
+      "name": "Llama 3.1 8B Instruct FP8",
+      "family": "llama-3.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.29,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-2-7b-chat-fp16",
+      "name": "Llama 2 7B Chat FP16",
+      "family": "llama-2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.56,
+        "output": 6.67,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3-8b-instruct",
+      "name": "Llama 3 8B Instruct",
+      "family": "llama-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.83,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.1-8b-instruct",
+      "name": "Llama 3.1 8B Instruct",
+      "family": "llama-3.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.8299999999999998,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/m2m100-1.2b",
+      "name": "M2M100 1.2B",
+      "family": "m2m100",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.34,
+        "output": 0.34,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.2-3b-instruct",
+      "name": "Llama 3.2 3B Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.051,
+        "output": 0.34,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "name": "Llama 3.3 70B Instruct FP8 Fast",
+      "family": "llama-3.3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.29,
+        "output": 2.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3-8b-instruct-awq",
+      "name": "Llama 3 8B Instruct AWQ",
+      "family": "llama-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.12,
+        "output": 0.27,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.2-1b-instruct",
+      "name": "Llama 3.2 1B Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.027,
+        "output": 0.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-guard-3-8b",
+      "name": "Llama Guard 3 8B",
+      "family": "llama-guard",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.48,
+        "output": 0.03,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/meta/llama-3.1-8b-instruct-awq",
+      "name": "Llama 3.1 8B Instruct AWQ",
+      "family": "llama-3.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.12,
+        "output": 0.27,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/baai/bge-m3",
+      "name": "BGE M3",
+      "family": "bge-m3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.012,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/baai/bge-base-en-v1.5",
+      "name": "BGE Base EN v1.5",
+      "family": "bge-base",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.067,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/baai/bge-large-en-v1.5",
+      "name": "BGE Large EN v1.5",
+      "family": "bge-large",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/baai/bge-small-en-v1.5",
+      "name": "BGE Small EN v1.5",
+      "family": "bge-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.02,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "workers-ai/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek R1 Distill Qwen 32B",
+      "family": "deepseek-r1-distill-qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.5,
+        "output": 4.88,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-04-03",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o3-mini",
+      "name": "o3-mini",
+      "family": "o3-mini",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.55,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-12-20",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o1",
+      "name": "o1",
+      "family": "o1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 60,
+        "cache_read": 7.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2024-12-05",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3.5-sonnet",
+      "name": "Claude Sonnet 3.5 v2",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-10-22",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3-5-haiku",
+      "name": "Claude Haiku 3.5 (latest)",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 4,
+        "cache_read": 0.08,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-10-22",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3.5-haiku",
+      "name": "Claude Haiku 3.5 (latest)",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 4,
+        "cache_read": 0.08,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-10-22",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "family": "gpt-4o-mini",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.08,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-07-18",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "GPT-4o",
+      "family": "gpt-4o",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-05-13",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3-haiku",
+      "name": "Claude Haiku 3",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 1.25,
+        "cache_read": 0.03,
+        "cache_write": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-03-13",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3-sonnet",
+      "name": "Claude Sonnet 3",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-03-04",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3-opus",
+      "name": "Claude Opus 3",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-02-29",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "GPT-4",
+      "family": "gpt-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 30,
+        "output": 60,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2023-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "family": "gpt-4-turbo",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 10,
+        "output": 30,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2023-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "name": "GPT-3.5-turbo",
+      "family": "gpt-3.5-turbo",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16385,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2023-03-01",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.369Z",
+  "source": "models.dev"
+}

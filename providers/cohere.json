@@ -1,0 +1,193 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "cohere",
+    "name": "Cohere"
+  },
+  "models": [
+    {
+      "id": "command-a-translate-08-2025",
+      "name": "Command A Translate",
+      "family": "command-a",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8000,
+        "max_output": 8000
+      },
+      "status": "active",
+      "release_date": "2025-08-28",
+      "is_latest": false
+    },
+    {
+      "id": "command-a-reasoning-08-2025",
+      "name": "Command A Reasoning",
+      "family": "command-a",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-08-21",
+      "is_latest": false
+    },
+    {
+      "id": "command-a-vision-07-2025",
+      "name": "Command A Vision",
+      "family": "command-a",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8000
+      },
+      "status": "active",
+      "release_date": "2025-07-31",
+      "is_latest": false
+    },
+    {
+      "id": "command-a-03-2025",
+      "name": "Command A",
+      "family": "command-a",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 8000
+      },
+      "status": "active",
+      "release_date": "2025-03-13",
+      "is_latest": false
+    },
+    {
+      "id": "command-r-08-2024",
+      "name": "Command R",
+      "family": "command-r",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4000
+      },
+      "status": "active",
+      "release_date": "2024-08-30",
+      "is_latest": false
+    },
+    {
+      "id": "command-r-plus-08-2024",
+      "name": "Command R+",
+      "family": "command-r-plus",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4000
+      },
+      "status": "active",
+      "release_date": "2024-08-30",
+      "is_latest": false
+    },
+    {
+      "id": "command-r7b-12-2024",
+      "name": "Command R7B",
+      "family": "command-r",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.0375,
+        "output": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4000
+      },
+      "status": "active",
+      "release_date": "2024-02-27",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.359Z",
+  "source": "models.dev"
+}

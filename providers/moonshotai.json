@@ -1,0 +1,146 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "moonshotai",
+    "name": "Moonshot AI"
+  },
+  "models": [
+    {
+      "id": "kimi-k2-thinking-turbo",
+      "name": "Kimi K2 Thinking Turbo",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.15,
+        "output": 8,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-turbo-preview",
+      "name": "Kimi K2 Turbo",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.4,
+        "output": 10,
+        "cache_read": 0.6,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-0905-preview",
+      "name": "Kimi K2 0905",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "kimi-k2-0711-preview",
+      "name": "Kimi K2 0711",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-07-14",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.356Z",
+  "source": "models.dev"
+}

@@ -1,0 +1,3631 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "openrouter",
+    "name": "OpenRouter"
+  },
+  "models": [
+    {
+      "id": "minimax/minimax-m2.1",
+      "name": "MiniMax M2.1",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-12-23",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "name": "GLM-4.7",
+      "family": "glm-4.7",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "cache_read": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 204800,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-12-22",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "family": "gemini-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.5,
+        "output": 3,
+        "cache_read": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-12-17",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.2-pro",
+      "name": "GPT-5.2 Pro",
+      "family": "gpt-5-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 21,
+        "output": 168,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.2-chat-latest",
+      "name": "GPT-5.2 Chat",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": true
+    },
+    {
+      "id": "openai/gpt-5.2",
+      "name": "GPT-5.2",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-speciale",
+      "name": "DeepSeek V3.2 Speciale",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.27,
+        "output": 0.41,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "name": "DeepSeek V3.2",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-12-01",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4.5",
+      "name": "Claude Opus 4.5",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-11-24",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4.1-fast",
+      "name": "Grok 4.1 Fast",
+      "family": "grok-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05,
+        "cache_write": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 2000000,
+        "max_output": 30000
+      },
+      "status": "active",
+      "release_date": "2025-11-19",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-3-pro-preview",
+      "name": "Gemini 3 Pro Preview",
+      "family": "gemini-pro",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 12,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1050000,
+        "max_output": 66000
+      },
+      "status": "active",
+      "release_date": "2025-11-18",
+      "is_latest": false
+    },
+    {
+      "id": "openrouter/sherlock-think-alpha",
+      "name": "Sherlock Think Alpha",
+      "family": "sherlock",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1840000,
+        "max_output": 0
+      },
+      "status": "active",
+      "release_date": "2025-11-15",
+      "is_latest": false
+    },
+    {
+      "id": "openrouter/sherlock-dash-alpha",
+      "name": "Sherlock Dash Alpha",
+      "family": "sherlock",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1840000,
+        "max_output": 0
+      },
+      "status": "active",
+      "release_date": "2025-11-15",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "name": "GPT-5.1-Codex",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-codex-mini",
+      "name": "GPT-5.1-Codex-Mini",
+      "family": "gpt-5-codex-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "name": "GPT-5.1",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5.1-chat",
+      "name": "GPT-5.1 Chat",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-11-13",
+      "is_latest": false
+    },
+    {
+      "id": "kwaipilot/kat-coder-pro:free",
+      "name": "Kat Coder Pro (free)",
+      "family": "kat-coder-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-11-10",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-11-06",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-20b",
+      "name": "GPT OSS Safeguard 20B",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.075,
+        "output": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-10-29",
+      "is_latest": false
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax M2",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 1.15,
+        "cache_read": 0.28,
+        "cache_write": 1.15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 196600,
+        "max_output": 118000
+      },
+      "status": "active",
+      "release_date": "2025-10-23",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Claude Haiku 4.5",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-10-15",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-image",
+      "name": "GPT-5 Image",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 5,
+        "output": 10,
+        "cache_read": 1.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-10-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "name": "GPT-5 Pro",
+      "family": "gpt-5-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 120,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 272000
+      },
+      "status": "active",
+      "release_date": "2025-10-06",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "GLM 4.6",
+      "family": "glm-4.6",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "cache_read": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-09-30",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.6:exacto",
+      "name": "GLM 4.6 (exacto)",
+      "family": "glm-4.6",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 1.9,
+        "cache_read": 0.11,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-09-30",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "name": "Claude Sonnet 4.5",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-09-29",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash-preview-09-2025",
+      "name": "Gemini 2.5 Flash Preview 09-25",
+      "family": "gemini-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 2.5,
+        "cache_read": 0.031,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
+      "name": "Gemini 2.5 Flash Lite Preview 09-25",
+      "family": "gemini-flash-lite",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "name": "DeepSeek V3.1 Terminus",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.27,
+        "output": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-09-22",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus:exacto",
+      "name": "DeepSeek V3.1 Terminus (exacto)",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.27,
+        "output": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-09-22",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-codex",
+      "name": "GPT-5 Codex",
+      "family": "gpt-5-codex",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-09-15",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-2512:free",
+      "name": "Devstral 2 2512 (free)",
+      "family": "devstral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-12",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-2512",
+      "name": "Devstral 2 2512",
+      "family": "devstral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-12",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen3 Next 80B A3B Instruct",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.14,
+        "output": 1.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-11",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen3 Next 80B A3B Thinking",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.14,
+        "output": 1.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-09-11",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "name": "Kimi K2 Instruct 0905",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905:exacto",
+      "name": "Kimi K2 Instruct 0905 (exacto)",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-max",
+      "name": "Qwen3 Max",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.2,
+        "output": 6,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-09-05",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-code-fast-1",
+      "name": "Grok Code Fast 1",
+      "family": "grok",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 1.5,
+        "cache_read": 0.02,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 10000
+      },
+      "status": "active",
+      "release_date": "2025-08-26",
+      "is_latest": false
+    },
+    {
+      "id": "nousresearch/hermes-4-70b",
+      "name": "Hermes 4 70B",
+      "family": "hermes",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.13,
+        "output": 0.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-08-25",
+      "is_latest": false
+    },
+    {
+      "id": "nousresearch/hermes-4-405b",
+      "name": "Hermes 4 405B",
+      "family": "hermes",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1,
+        "output": 3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-08-25",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "name": "DeepSeek-V3.1",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-08-21",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4-fast",
+      "name": "Grok 4 Fast",
+      "family": "grok-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05,
+        "cache_write": 0.05,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 2000000,
+        "max_output": 30000
+      },
+      "status": "active",
+      "release_date": "2025-08-19",
+      "is_latest": false
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "name": "nvidia-nemotron-nano-9b-v2",
+      "family": "nemotron",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.04,
+        "output": 0.16,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-08-18",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1",
+      "name": "Mistral Medium 3.1",
+      "family": "mistral-medium",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2025-08-12",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "name": "GLM 4.5V",
+      "family": "glm-4.5v",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 1.8,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 64000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-08-11",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-chat",
+      "name": "GPT-5 Chat (latest)",
+      "family": "gpt-5-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "name": "GPT-5 Nano",
+      "family": "gpt-5-nano",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.05,
+        "output": 0.4,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "family": "gpt-5-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-5",
+      "name": "GPT-5",
+      "family": "gpt-5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 400000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-08-07",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-oss-120b:exacto",
+      "name": "GPT OSS 120B (exacto)",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.05,
+        "output": 0.24,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.05,
+        "output": 0.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "GPT OSS 120B",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.072,
+        "output": 0.28,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "name": "Claude Opus 4.1",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/codestral-2508",
+      "name": "Codestral 2508",
+      "family": "codestral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 0.9,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 256000
+      },
+      "status": "active",
+      "release_date": "2025-08-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-thinking-2507",
+      "name": "Qwen3 30B A3B Thinking 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262000,
+        "max_output": 262000
+      },
+      "status": "active",
+      "release_date": "2025-07-29",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "name": "Qwen3 30B A3B Instruct 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262000,
+        "max_output": 262000
+      },
+      "status": "active",
+      "release_date": "2025-07-29",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "name": "GLM 4.5",
+      "family": "glm-4.5",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.6,
+        "output": 2.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 96000
+      },
+      "status": "active",
+      "release_date": "2025-07-28",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "name": "GLM 4.5 Air",
+      "family": "glm-4.5-air",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 1.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 96000
+      },
+      "status": "active",
+      "release_date": "2025-07-28",
+      "is_latest": false
+    },
+    {
+      "id": "z-ai/glm-4.5-air:free",
+      "name": "GLM 4.5 Air (free)",
+      "family": "glm-4.5-air",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 96000
+      },
+      "status": "active",
+      "release_date": "2025-07-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen3 235B A22B Thinking 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.078,
+        "output": 0.312,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 81920
+      },
+      "status": "active",
+      "release_date": "2025-07-25",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "name": "Qwen3 Coder",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 66536
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder-flash",
+      "name": "Qwen3 Coder Flash",
+      "family": "qwen3-coder",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 1.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 66536
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder:free",
+      "name": "Qwen3 Coder 480B A35B Instruct (free)",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 66536
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder:exacto",
+      "name": "Qwen3 Coder (exacto)",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.38,
+        "output": 1.53,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "family": "gemini-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 2.5,
+        "cache_read": 0.0375,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-07-17",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2",
+      "name": "Kimi K2",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.55,
+        "output": 2.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-07-11",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-k2:free",
+      "name": "Kimi K2 (free)",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32800,
+        "max_output": 32800
+      },
+      "status": "active",
+      "release_date": "2025-07-11",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-medium-2507",
+      "name": "Devstral Medium",
+      "family": "devstral-medium",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-07-10",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-small-2507",
+      "name": "Devstral Small 1.1",
+      "family": "devstral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-07-10",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-4",
+      "name": "Grok 4",
+      "family": "grok-4",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.75,
+        "cache_write": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-07-09",
+      "is_latest": false
+    },
+    {
+      "id": "tngtech/deepseek-r1t2-chimera:free",
+      "name": "DeepSeek R1T2 Chimera (free)",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-07-08",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "name": "Mistral Small 3.2 24B Instruct",
+      "family": "mistral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 96000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-06-20",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct:free",
+      "name": "Mistral Small 3.2 24B (free)",
+      "family": "mistral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 96000,
+        "max_output": 96000
+      },
+      "status": "active",
+      "release_date": "2025-06-20",
+      "is_latest": false
+    },
+    {
+      "id": "minimax/minimax-m1",
+      "name": "MiniMax M1",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 2.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 40000
+      },
+      "status": "active",
+      "release_date": "2025-06-17",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "name": "Gemini 2.5 Flash Lite",
+      "family": "gemini-flash-lite",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-06-17",
+      "is_latest": false
+    },
+    {
+      "id": "moonshotai/kimi-dev-72b:free",
+      "name": "Kimi Dev 72b (free)",
+      "family": "kimi",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-06-16",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview-06-05",
+      "name": "Gemini 2.5 Pro Preview 06-05",
+      "family": "gemini-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.31,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-06-05",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "name": "Deepseek R1 0528 Qwen3 8B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-05-29",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528:free",
+      "name": "R1 0528 (free)",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-05-28",
+      "is_latest": false
+    },
+    {
+      "id": "sarvamai/sarvam-m:free",
+      "name": "Sarvam-M (free)",
+      "family": "sarvam-m",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-05-25",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-opus-4",
+      "name": "Claude Opus 4",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-05-22",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Claude Sonnet 4",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-05-22",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-small-2505:free",
+      "name": "Devstral Small 2505 (free)",
+      "family": "devstral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-05-21",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "name": "Gemma 3n E4B IT",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-05-20",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-3n-e4b-it:free",
+      "name": "Gemma 3n 4B (free)",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-05-20",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/devstral-small-2505",
+      "name": "Devstral Small",
+      "family": "devstral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.06,
+        "output": 0.12,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-05-07",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-medium-3",
+      "name": "Mistral Medium 3",
+      "family": "mistral-medium",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-05-07",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview-05-06",
+      "name": "Gemini 2.5 Pro Preview 05-06",
+      "family": "gemini-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.31,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-05-06",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-32b:free",
+      "name": "Qwen3 32B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 40960,
+        "max_output": 40960
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b:free",
+      "name": "Qwen3 235B A22B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b:free",
+      "name": "Qwen3 30B A3B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 40960,
+        "max_output": 40960
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-14b:free",
+      "name": "Qwen3 14B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 40960,
+        "max_output": 40960
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-07-25:free",
+      "name": "Qwen3 235B A22B Instruct 2507 (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-07-25",
+      "name": "Qwen3 235B A22B Instruct 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.85,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-8b:free",
+      "name": "Qwen3 8B (free)",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 40960,
+        "max_output": 40960
+      },
+      "status": "active",
+      "release_date": "2025-04-28",
+      "is_latest": false
+    },
+    {
+      "id": "microsoft/mai-ds-r1:free",
+      "name": "MAI DS R1 (free)",
+      "family": "mai-ds-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-04-21",
+      "is_latest": false
+    },
+    {
+      "id": "thudm/glm-z1-32b:free",
+      "name": "GLM Z1 32B (free)",
+      "family": "glm-z1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-17",
+      "is_latest": false
+    },
+    {
+      "id": "openai/o4-mini",
+      "name": "o4 Mini",
+      "family": "o4-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.28,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 100000
+      },
+      "status": "active",
+      "release_date": "2025-04-16",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "name": "GPT-4.1 Mini",
+      "family": "gpt-4.1-mini",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.4,
+        "output": 1.6,
+        "cache_read": 0.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1047576,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-14",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "name": "GPT-4.1",
+      "family": "gpt-4.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1047576,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-04-14",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/llama-4-scout:free",
+      "name": "Llama 4 Scout (free)",
+      "family": "llama-4-scout",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 64000,
+        "max_output": 64000
+      },
+      "status": "active",
+      "release_date": "2025-04-05",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-v3-base:free",
+      "name": "DeepSeek V3 Base (free)",
+      "family": "deepseek-v3",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-03-29",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek V3 0324",
+      "family": "deepseek-v3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16384,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-24",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen2.5-vl-32b-instruct:free",
+      "name": "Qwen2.5 VL 32B Instruct (free)",
+      "family": "qwen2.5-vl",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-24",
+      "is_latest": false
+    },
+    {
+      "id": "featherless/qwerky-72b",
+      "name": "Qwerky 72B",
+      "family": "qwerky",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-20",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "family": "gemini-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.31,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-03-20",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral Small 3.1 24B Instruct",
+      "family": "mistral-small",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-17",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "name": "Gemma 3 12B IT",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 96000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-13",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "name": "Gemma 3 27B IT",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 96000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-12",
+      "is_latest": false
+    },
+    {
+      "id": "rekaai/reka-flash-3",
+      "name": "Reka Flash 3",
+      "family": "reka-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-12",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwq-32b:free",
+      "name": "QwQ 32B (free)",
+      "family": "qwq",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-03-05",
+      "is_latest": false
+    },
+    {
+      "id": "nousresearch/deephermes-3-llama-3-8b-preview",
+      "name": "DeepHermes 3 Llama 3 8B Preview",
+      "family": "llama-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-28",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet",
+      "name": "Claude Sonnet 3.7",
+      "family": "claude-sonnet",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "cache_read": 1.5,
+        "cache_write": 18.75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-02-19",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-3",
+      "name": "Grok 3",
+      "family": "grok-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.75,
+        "cache_write": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-17",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-3-beta",
+      "name": "Grok 3 Beta",
+      "family": "grok-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.75,
+        "cache_write": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-17",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-3-mini-beta",
+      "name": "Grok 3 Mini Beta",
+      "family": "grok-3",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5,
+        "cache_read": 0.075,
+        "cache_write": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-17",
+      "is_latest": false
+    },
+    {
+      "id": "x-ai/grok-3-mini",
+      "name": "Grok 3 Mini",
+      "family": "grok-3",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5,
+        "cache_read": 0.075,
+        "cache_write": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-17",
+      "is_latest": false
+    },
+    {
+      "id": "cognitivecomputations/dolphin3.0-mistral-24b",
+      "name": "Dolphin3.0 Mistral 24B",
+      "family": "mistral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-13",
+      "is_latest": false
+    },
+    {
+      "id": "cognitivecomputations/dolphin3.0-r1-mistral-24b",
+      "name": "Dolphin3.0 R1 Mistral 24B",
+      "family": "mistral",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-13",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "name": "Qwen2.5 VL 72B Instruct",
+      "family": "qwen2.5-vl",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-02-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen2.5-vl-72b-instruct:free",
+      "name": "Qwen2.5 VL 72B Instruct (free)",
+      "family": "qwen2.5-vl",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-02-01",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-qwen-14b",
+      "name": "DeepSeek R1 Distill Qwen 14B",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 64000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-29",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-llama-70b",
+      "name": "DeepSeek R1 Distill Llama 70B",
+      "family": "deepseek-r1-distill-llama",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-23",
+      "is_latest": false
+    },
+    {
+      "id": "deepseek/deepseek-r1:free",
+      "name": "R1 (free)",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163840,
+        "max_output": 163840
+      },
+      "status": "active",
+      "release_date": "2025-01-20",
+      "is_latest": false
+    },
+    {
+      "id": "minimax/minimax-01",
+      "name": "MiniMax-01",
+      "family": "minimax",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 1.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 1000000
+      },
+      "status": "active",
+      "release_date": "2025-01-15",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.0-flash-001",
+      "name": "Gemini 2.0 Flash",
+      "family": "gemini-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemini-2.0-flash-exp:free",
+      "name": "Gemini 2.0 Flash Experimental (free)",
+      "family": "gemini-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 1048576,
+        "max_output": 1048576
+      },
+      "status": "active",
+      "release_date": "2024-12-11",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "name": "Llama 3.3 70B Instruct (free)",
+      "family": "llama-3.3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 65536,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2024-12-06",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-11-11",
+      "is_latest": false
+    },
+    {
+      "id": "anthropic/claude-3.5-haiku",
+      "name": "Claude Haiku 3.5",
+      "family": "claude-haiku",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 4,
+        "cache_read": 0.08,
+        "cache_write": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-10-22",
+      "is_latest": false
+    },
+    {
+      "id": "meta-llama/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-09-25",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-nemo:free",
+      "name": "Mistral Nemo (free)",
+      "family": "mistral-nemo",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 131072
+      },
+      "status": "active",
+      "release_date": "2024-07-19",
+      "is_latest": false
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "GPT-4o-mini",
+      "family": "gpt-4o-mini",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.08,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-07-18",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-2-9b-it:free",
+      "name": "Gemma 2 9B (free)",
+      "family": "gemma-2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 8192,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-06-28",
+      "is_latest": false
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct:free",
+      "name": "Mistral 7B Instruct (free)",
+      "family": "mistral-7b",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2024-05-27",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.370Z",
+  "source": "models.dev"
+}

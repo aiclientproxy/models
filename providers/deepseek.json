@@ -1,0 +1,69 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "deepseek",
+    "name": "DeepSeek"
+  },
+  "models": [
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek Reasoner",
+      "family": "deepseek",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.42,
+        "cache_read": 0.028,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 128000
+      },
+      "status": "active",
+      "release_date": "2025-01-20",
+      "is_latest": false,
+      "description": "DeepSeek R1 reasoning model",
+      "description_zh": "DeepSeek R1 推理模型"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "family": "deepseek-chat",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.28,
+        "output": 0.42,
+        "cache_read": 0.028,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-12-26",
+      "is_latest": false,
+      "description": "DeepSeek V3 chat model",
+      "description_zh": "DeepSeek V3 对话模型"
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.362Z",
+  "source": "models.dev"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "kimi-for-coding",
+    "name": "Kimi For Coding"
+  },
+  "models": [
+    {
+      "id": "kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "family": "kimi-k2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-11",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.364Z",
+  "source": "models.dev"
+}

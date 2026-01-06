@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "xiaomi",
+    "name": "Xiaomi"
+  },
+  "models": [
+    {
+      "id": "mimo-v2-flash",
+      "name": "MiMo-V2-Flash",
+      "family": "mimo-v2-flash",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.07,
+        "output": 0.21,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-12-17",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.357Z",
+  "source": "models.dev"
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "dashscope",
+    "name": "阿里云百炼",
+    "website": "https://dashscope.aliyun.com",
+    "api_docs": "https://help.aliyun.com/zh/model-studio/"
+  },
+  "models": [
+    {
+      "id": "qwen3-max",
+      "name": "通义千问3 Max",
+      "family": "qwen3",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3.2,
+        "output": 12.8,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": true,
+      "description": "Qwen3 flagship model with extended thinking",
+      "description_zh": "通义千问3旗舰模型，支持思考模式"
+    },
+    {
+      "id": "qwen-max",
+      "name": "通义千问 Max",
+      "family": "qwen",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.4,
+        "output": 9.6,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-12-01",
+      "is_latest": false,
+      "description": "Qwen Max stable version",
+      "description_zh": "通义千问Max稳定版"
+    },
+    {
+      "id": "qwen-plus",
+      "name": "通义千问 Plus",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 2.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": true,
+      "description": "Qwen Plus with 1M context",
+      "description_zh": "通义千问Plus，支持100万上下文"
+    },
+    {
+      "id": "qwen-turbo",
+      "name": "通义千问 Turbo",
+      "family": "qwen3",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 1.5,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": true,
+      "description": "Qwen Turbo fast model",
+      "description_zh": "通义千问Turbo快速版"
+    },
+    {
+      "id": "qwen-coder-plus",
+      "name": "通义千问 Coder Plus",
+      "family": "qwen-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.0,
+        "output": 4.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 1000000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": true,
+      "description": "Qwen Coder model for programming",
+      "description_zh": "通义千问代码模型"
+    }
+  ],
+  "updated_at": "2025-01-06T00:00:00Z",
+  "source": "manual"
+}

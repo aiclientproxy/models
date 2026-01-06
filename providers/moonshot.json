@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "moonshot",
+    "name": "月之暗面",
+    "website": "https://www.moonshot.cn",
+    "api_docs": "https://platform.moonshot.cn/docs"
+  },
+  "models": [
+    {
+      "id": "moonshot-v1-128k",
+      "name": "Moonshot V1 128K",
+      "family": "moonshot",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 60.0,
+        "output": 60.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-03-01",
+      "is_latest": true,
+      "description": "Moonshot long context model",
+      "description_zh": "月之暗面长上下文模型"
+    },
+    {
+      "id": "moonshot-v1-32k",
+      "name": "Moonshot V1 32K",
+      "family": "moonshot",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 24.0,
+        "output": 24.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-03-01",
+      "is_latest": true,
+      "description": "Moonshot standard model",
+      "description_zh": "月之暗面标准模型"
+    },
+    {
+      "id": "moonshot-v1-8k",
+      "name": "Moonshot V1 8K",
+      "family": "moonshot",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 12.0,
+        "output": 12.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 8000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-03-01",
+      "is_latest": true,
+      "description": "Moonshot fast model",
+      "description_zh": "月之暗面快速模型"
+    }
+  ],
+  "updated_at": "2025-01-06T00:00:00Z",
+  "source": "manual"
+}

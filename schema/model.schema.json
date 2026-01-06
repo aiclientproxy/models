@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/aiclientproxy/models/schema/model.schema.json",
+  "title": "AI Model Provider Data",
+  "description": "Schema for AI model provider data files",
+  "type": "object",
+  "required": ["provider", "models", "updated_at"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Provider identifier (e.g., 'anthropic', 'openai')"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the provider"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Provider's website URL"
+        },
+        "api_docs": {
+          "type": "string",
+          "format": "uri",
+          "description": "API documentation URL"
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/model"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp in ISO 8601 format"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["models.dev", "manual"],
+      "description": "Data source"
+    }
+  },
+  "definitions": {
+    "model": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Model identifier (e.g., 'claude-opus-4-5-20251101')"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the model"
+        },
+        "family": {
+          "type": "string",
+          "description": "Model family (e.g., 'opus', 'sonnet', 'haiku')"
+        },
+        "tier": {
+          "type": "string",
+          "enum": ["mini", "pro", "max"],
+          "description": "Service tier"
+        },
+        "capabilities": {
+          "$ref": "#/definitions/capabilities"
+        },
+        "pricing": {
+          "$ref": "#/definitions/pricing"
+        },
+        "limits": {
+          "$ref": "#/definitions/limits"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "preview", "alpha", "beta", "deprecated", "legacy"],
+          "default": "active"
+        },
+        "release_date": {
+          "type": "string",
+          "description": "Release date (YYYY-MM-DD)"
+        },
+        "is_latest": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is the latest version in its family"
+        },
+        "description": {
+          "type": "string",
+          "description": "Model description"
+        },
+        "description_zh": {
+          "type": "string",
+          "description": "Chinese description"
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "vision": {
+          "type": "boolean",
+          "default": false,
+          "description": "Supports image/video input"
+        },
+        "tools": {
+          "type": "boolean",
+          "default": false,
+          "description": "Supports tool use"
+        },
+        "streaming": {
+          "type": "boolean",
+          "default": true,
+          "description": "Supports streaming output"
+        },
+        "json_mode": {
+          "type": "boolean",
+          "default": false,
+          "description": "Supports JSON mode"
+        },
+        "function_calling": {
+          "type": "boolean",
+          "default": false,
+          "description": "Supports function calling"
+        },
+        "reasoning": {
+          "type": "boolean",
+          "default": false,
+          "description": "Supports extended thinking/reasoning"
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "number",
+          "description": "Input price per million tokens"
+        },
+        "output": {
+          "type": "number",
+          "description": "Output price per million tokens"
+        },
+        "cache_read": {
+          "type": "number",
+          "description": "Cache read price per million tokens"
+        },
+        "cache_write": {
+          "type": "number",
+          "description": "Cache write price per million tokens"
+        },
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "CNY"],
+          "default": "USD"
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "properties": {
+        "context": {
+          "type": "integer",
+          "description": "Context window size in tokens"
+        },
+        "max_output": {
+          "type": "integer",
+          "description": "Maximum output tokens"
+        },
+        "rpm": {
+          "type": "integer",
+          "description": "Requests per minute limit"
+        },
+        "tpm": {
+          "type": "integer",
+          "description": "Tokens per minute limit"
+        }
+      }
+    }
+  }
+}

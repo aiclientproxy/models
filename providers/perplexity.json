@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "perplexity",
+    "name": "Perplexity"
+  },
+  "models": [
+    {
+      "id": "sonar",
+      "name": "Sonar",
+      "family": "sonar",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1,
+        "output": 1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "sonar-pro",
+      "name": "Sonar Pro",
+      "family": "sonar-pro",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2024-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "sonar-reasoning-pro",
+      "name": "Sonar Reasoning Pro",
+      "family": "sonar-reasoning",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 2,
+        "output": 8,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-01-01",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.370Z",
+  "source": "models.dev"
+}

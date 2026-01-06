@@ -1,0 +1,30 @@
+{
+  "name": "@aiclientproxy/models",
+  "version": "1.0.0",
+  "description": "AI model metadata repository for ProxyCast and other projects",
+  "type": "module",
+  "scripts": {
+    "sync": "tsx scripts/sync-models-dev.ts",
+    "validate": "tsx scripts/validate.ts",
+    "build": "pnpm run sync && pnpm run validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiclientproxy/models.git"
+  },
+  "keywords": [
+    "ai",
+    "models",
+    "llm",
+    "anthropic",
+    "openai",
+    "gemini"
+  ],
+  "author": "aiclientproxy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

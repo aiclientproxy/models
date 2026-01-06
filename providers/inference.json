@@ -1,0 +1,245 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "inference",
+    "name": "Inference"
+  },
+  "models": [
+    {
+      "id": "mistral/mistral-nemo-12b-instruct",
+      "name": "Mistral Nemo 12B Instruct",
+      "family": "mistral-nemo",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.038,
+        "output": 0.1,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "google/gemma-3",
+      "name": "Google Gemma 3",
+      "family": "gemma-3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 125000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "osmosis/osmosis-structure-0.6b",
+      "name": "Osmosis Structure 0.6B",
+      "family": "osmosis-structure-0.6b",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.5,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 4000,
+        "max_output": 2048
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-embedding-4b",
+      "name": "Qwen 3 Embedding 4B",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.01,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 2048
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-vision-instruct",
+      "name": "Qwen 2.5 7B Vision Instruct",
+      "family": "qwen",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.2,
+        "output": 0.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 125000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "meta/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.055,
+        "output": 0.055,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "meta/llama-3.1-8b-instruct",
+      "name": "Llama 3.1 8B Instruct",
+      "family": "llama-3.1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.025,
+        "output": 0.025,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "meta/llama-3.2-3b-instruct",
+      "name": "Llama 3.2 3B Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.02,
+        "output": 0.02,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    },
+    {
+      "id": "meta/llama-3.2-1b-instruct",
+      "name": "Llama 3.2 1B Instruct",
+      "family": "llama-3.2",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.01,
+        "output": 0.01,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2025-01-01",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.373Z",
+  "source": "models.dev"
+}

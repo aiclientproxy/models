@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "v0",
+    "name": "v0"
+  },
+  "models": [
+    {
+      "id": "v0-1.5-lg",
+      "name": "v0-1.5-lg",
+      "family": "v0",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 15,
+        "output": 75,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 512000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-06-09",
+      "is_latest": false
+    },
+    {
+      "id": "v0-1.5-md",
+      "name": "v0-1.5-md",
+      "family": "v0",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-06-09",
+      "is_latest": false
+    },
+    {
+      "id": "v0-1.0-md",
+      "name": "v0-1.0-md",
+      "family": "v0",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2025-05-22",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.371Z",
+  "source": "models.dev"
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "yi",
+    "name": "零一万物",
+    "website": "https://www.lingyiwanwu.com",
+    "api_docs": "https://platform.lingyiwanwu.com/docs"
+  },
+  "models": [
+    {
+      "id": "yi-large",
+      "name": "Yi Large",
+      "family": "yi",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 20.0,
+        "output": 20.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 32768,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-05-01",
+      "is_latest": true,
+      "description": "Yi flagship model",
+      "description_zh": "零一万物旗舰模型"
+    },
+    {
+      "id": "yi-medium",
+      "name": "Yi Medium",
+      "family": "yi",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 2.5,
+        "output": 2.5,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 16384,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-05-01",
+      "is_latest": true,
+      "description": "Yi standard model",
+      "description_zh": "零一万物标准模型"
+    },
+    {
+      "id": "yi-spark",
+      "name": "Yi Spark",
+      "family": "yi",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 1.0,
+        "output": 1.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 16384,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-05-01",
+      "is_latest": true,
+      "description": "Yi fast model",
+      "description_zh": "零一万物快速模型"
+    }
+  ],
+  "updated_at": "2025-01-06T00:00:00Z",
+  "source": "manual"
+}

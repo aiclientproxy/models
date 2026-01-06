@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "lmstudio",
+    "name": "LMStudio"
+  },
+  "models": [
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "family": "gpt-oss",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 32768
+      },
+      "status": "active",
+      "release_date": "2025-08-05",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-2507",
+      "name": "Qwen3 30B A3B 2507",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-07-30",
+      "is_latest": false
+    },
+    {
+      "id": "qwen/qwen3-coder-30b",
+      "name": "Qwen3 Coder 30B",
+      "family": "qwen3-coder",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 65536
+      },
+      "status": "active",
+      "release_date": "2025-07-23",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.374Z",
+  "source": "models.dev"
+}

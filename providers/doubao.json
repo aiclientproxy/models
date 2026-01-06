@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "doubao",
+    "name": "字节跳动",
+    "website": "https://www.volcengine.com/product/doubao",
+    "api_docs": "https://www.volcengine.com/docs/82379"
+  },
+  "models": [
+    {
+      "id": "doubao-pro-256k",
+      "name": "豆包 Pro 256K",
+      "family": "doubao",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 5.0,
+        "output": 9.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 256000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-10-01",
+      "is_latest": true,
+      "description": "Doubao flagship long context model",
+      "description_zh": "豆包旗舰长上下文模型"
+    },
+    {
+      "id": "doubao-pro-32k",
+      "name": "豆包 Pro 32K",
+      "family": "doubao",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 2.0,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-06-01",
+      "is_latest": true,
+      "description": "Doubao standard model",
+      "description_zh": "豆包标准模型"
+    },
+    {
+      "id": "doubao-lite-32k",
+      "name": "豆包 Lite 32K",
+      "family": "doubao",
+      "tier": "mini",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6,
+        "currency": "CNY"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2024-06-01",
+      "is_latest": true,
+      "description": "Doubao lightweight model",
+      "description_zh": "豆包轻量模型"
+    }
+  ],
+  "updated_at": "2025-01-06T00:00:00Z",
+  "source": "manual"
+}

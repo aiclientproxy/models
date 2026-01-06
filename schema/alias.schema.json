@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/aiclientproxy/models/schema/alias.schema.json",
+  "title": "Model Alias Mapping",
+  "description": "Schema for model alias mapping files",
+  "type": "object",
+  "required": ["provider", "aliases"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Provider identifier for this alias mapping"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of this alias mapping"
+    },
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/alias"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "definitions": {
+    "alias": {
+      "type": "object",
+      "required": ["actual"],
+      "properties": {
+        "actual": {
+          "type": "string",
+          "description": "The actual model ID this alias maps to"
+        },
+        "provider": {
+          "type": "string",
+          "description": "The provider of the actual model"
+        },
+        "internal_name": {
+          "type": "string",
+          "description": "Internal API name used by the proxy service"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of this alias"
+        }
+      }
+    }
+  }
+}

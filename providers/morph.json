@@ -1,0 +1,89 @@
+{
+  "$schema": "../schema/model.schema.json",
+  "provider": {
+    "id": "morph",
+    "name": "Morph"
+  },
+  "models": [
+    {
+      "id": "morph-v3-large",
+      "name": "Morph v3 Large",
+      "family": "morph-v3-large",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.9,
+        "output": 1.9,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2024-08-15",
+      "is_latest": false
+    },
+    {
+      "id": "morph-v3-fast",
+      "name": "Morph v3 Fast",
+      "family": "morph-v3-fast",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.8,
+        "output": 1.2,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 16000,
+        "max_output": 16000
+      },
+      "status": "active",
+      "release_date": "2024-08-15",
+      "is_latest": false
+    },
+    {
+      "id": "auto",
+      "name": "Auto",
+      "family": "auto",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.85,
+        "output": 1.55,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 32000,
+        "max_output": 32000
+      },
+      "status": "active",
+      "release_date": "2024-06-01",
+      "is_latest": false
+    }
+  ],
+  "updated_at": "2026-01-06T10:24:55.374Z",
+  "source": "models.dev"
+}
