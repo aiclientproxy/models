@@ -7,7 +7,6 @@
     "gemini-3-pro-image-preview",
     "gemini-3-pro-preview",
     "gemini-3-flash-preview",
-    "gemini-2.5-flash-preview",
     "gemini-claude-sonnet-4-5",
     "gemini-claude-sonnet-4-5-thinking",
     "gemini-claude-opus-4-5-thinking"
@@ -36,12 +35,6 @@
       "internal_name": "gemini-3-flash",
       "provider": "google",
       "description": "Gemini 3 Flash 预览版"
-    },
-    "gemini-2.5-flash-preview": {
-      "actual": "gemini-2.5-flash",
-      "internal_name": "gemini-2.5-flash",
-      "provider": "google",
-      "description": "Gemini 2.5 Flash 预览版"
     },
     "gemini-claude-sonnet-4-5": {
       "actual": "claude-sonnet-4-5-20250929",

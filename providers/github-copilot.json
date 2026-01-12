@@ -6,32 +6,6 @@
   },
   "models": [
     {
-      "id": "gemini-3-flash-preview",
-      "name": "Gemini 3 Flash",
-      "family": "gemini-flash",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 64000
-      },
-      "status": "active",
-      "release_date": "2025-12-17",
-      "is_latest": false
-    },
-    {
       "id": "gpt-5.2",
       "name": "GPT-5.2",
       "family": "gpt-5",
@@ -55,89 +29,11 @@
       },
       "status": "active",
       "release_date": "2025-12-11",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-5.1-codex-max",
-      "name": "GPT-5.1-Codex-max",
-      "family": "gpt-5-codex-max",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-12-04",
-      "is_latest": false
-    },
-    {
-      "id": "claude-opus-4.5",
-      "name": "Claude Opus 4.5",
-      "family": "claude-opus",
-      "tier": "max",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16000
-      },
-      "status": "active",
-      "release_date": "2025-11-24",
-      "is_latest": false
-    },
-    {
-      "id": "gemini-3-pro-preview",
-      "name": "Gemini 3 Pro Preview",
-      "family": "gemini-pro",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 64000
-      },
-      "status": "active",
-      "release_date": "2025-11-18",
-      "is_latest": false
+      "is_latest": true
     },
     {
       "id": "gpt-5.1-codex",
-      "name": "GPT-5.1-Codex",
+      "name": "GPT-5.1 Codex",
       "family": "gpt-5-codex",
       "tier": "pro",
       "capabilities": {
@@ -159,65 +55,13 @@
       },
       "status": "active",
       "release_date": "2025-11-13",
-      "is_latest": false
+      "is_latest": true
     },
     {
-      "id": "gpt-5.1-codex-mini",
-      "name": "GPT-5.1-Codex-mini",
-      "family": "gpt-5-codex-mini",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 100000
-      },
-      "status": "active",
-      "release_date": "2025-11-13",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-5.1",
-      "name": "GPT-5.1",
-      "family": "gpt-5",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-11-13",
-      "is_latest": false
-    },
-    {
-      "id": "oswe-vscode-prime",
-      "name": "Raptor Mini (Preview)",
-      "family": "oswe-vscode-prime",
-      "tier": "mini",
+      "id": "o3",
+      "name": "o3",
+      "family": "o3",
+      "tier": "max",
       "capabilities": {
         "vision": true,
         "tools": true,
@@ -233,37 +77,11 @@
       },
       "limits": {
         "context": 200000,
-        "max_output": 64000
+        "max_output": 100000
       },
       "status": "active",
-      "release_date": "2025-11-10",
-      "is_latest": false
-    },
-    {
-      "id": "claude-haiku-4.5",
-      "name": "Claude Haiku 4.5",
-      "family": "claude-haiku",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16000
-      },
-      "status": "active",
-      "release_date": "2025-10-15",
-      "is_latest": false
+      "release_date": "2025-04-16",
+      "is_latest": true
     },
     {
       "id": "claude-sonnet-4.5",
@@ -284,69 +102,17 @@
         "currency": "USD"
       },
       "limits": {
-        "context": 128000,
-        "max_output": 16000
+        "context": 200000,
+        "max_output": 64000
       },
       "status": "active",
       "release_date": "2025-09-29",
-      "is_latest": false
+      "is_latest": true
     },
     {
-      "id": "gpt-5-codex",
-      "name": "GPT-5-Codex",
-      "family": "gpt-5-codex",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-09-15",
-      "is_latest": false
-    },
-    {
-      "id": "grok-code-fast-1",
-      "name": "Grok Code Fast 1",
-      "family": "grok",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 64000
-      },
-      "status": "active",
-      "release_date": "2025-08-27",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-5-mini",
-      "name": "GPT-5-mini",
-      "family": "gpt-5-mini",
+      "id": "gemini-3-flash-preview",
+      "name": "Gemini 3 Flash",
+      "family": "gemini-flash",
       "tier": "mini",
       "capabilities": {
         "vision": true,
@@ -366,190 +132,8 @@
         "max_output": 64000
       },
       "status": "active",
-      "release_date": "2025-08-13",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-5",
-      "name": "GPT-5",
-      "family": "gpt-5",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-08-07",
-      "is_latest": false
-    },
-    {
-      "id": "claude-opus-41",
-      "name": "Claude Opus 4.1",
-      "family": "claude-opus",
-      "tier": "max",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 80000,
-        "max_output": 16000
-      },
-      "status": "active",
-      "release_date": "2025-08-05",
-      "is_latest": false
-    },
-    {
-      "id": "claude-opus-4",
-      "name": "Claude Opus 4",
-      "family": "claude-opus",
-      "tier": "max",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 80000,
-        "max_output": 16000
-      },
-      "status": "deprecated",
-      "release_date": "2025-05-22",
-      "is_latest": false
-    },
-    {
-      "id": "claude-sonnet-4",
-      "name": "Claude Sonnet 4",
-      "family": "claude-sonnet",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16000
-      },
-      "status": "active",
-      "release_date": "2025-05-22",
-      "is_latest": false
-    },
-    {
-      "id": "o4-mini",
-      "name": "o4-mini (Preview)",
-      "family": "o4-mini",
-      "tier": "mini",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 65536
-      },
-      "status": "deprecated",
-      "release_date": "2025-04-16",
-      "is_latest": false
-    },
-    {
-      "id": "o3",
-      "name": "o3 (Preview)",
-      "family": "o3",
-      "tier": "max",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16384
-      },
-      "status": "deprecated",
-      "release_date": "2025-04-16",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-4.1",
-      "name": "GPT-4.1",
-      "family": "gpt-4.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16384
-      },
-      "status": "active",
-      "release_date": "2025-04-14",
-      "is_latest": false
+      "release_date": "2025-12-17",
+      "is_latest": true
     },
     {
       "id": "gemini-2.5-pro",
@@ -562,7 +146,7 @@
         "streaming": true,
         "json_mode": true,
         "function_calling": true,
-        "reasoning": false
+        "reasoning": true
       },
       "pricing": {
         "input": 0,
@@ -570,170 +154,14 @@
         "currency": "USD"
       },
       "limits": {
-        "context": 128000,
-        "max_output": 64000
+        "context": 1048576,
+        "max_output": 65536
       },
       "status": "active",
       "release_date": "2025-03-20",
-      "is_latest": false
-    },
-    {
-      "id": "claude-3.7-sonnet",
-      "name": "Claude Sonnet 3.7",
-      "family": "claude-sonnet",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 16384
-      },
-      "status": "deprecated",
-      "release_date": "2025-02-19",
-      "is_latest": false
-    },
-    {
-      "id": "claude-3.7-sonnet-thought",
-      "name": "Claude Sonnet 3.7 Thinking",
-      "family": "claude-sonnet",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 16384
-      },
-      "status": "deprecated",
-      "release_date": "2025-02-19",
-      "is_latest": false
-    },
-    {
-      "id": "o3-mini",
-      "name": "o3-mini",
-      "family": "o3-mini",
-      "tier": "max",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 65536
-      },
-      "status": "deprecated",
-      "release_date": "2024-12-20",
-      "is_latest": false
-    },
-    {
-      "id": "gemini-2.0-flash-001",
-      "name": "Gemini 2.0 Flash",
-      "family": "gemini-flash",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 1000000,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-12-11",
-      "is_latest": false
-    },
-    {
-      "id": "claude-3.5-sonnet",
-      "name": "Claude Sonnet 3.5",
-      "family": "claude-sonnet",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 90000,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-10-22",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-4o",
-      "name": "GPT-4o",
-      "family": "gpt-4o",
-      "tier": "max",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 64000,
-        "max_output": 16384
-      },
-      "status": "active",
-      "release_date": "2024-05-13",
-      "is_latest": false
+      "is_latest": true
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.360Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "github.com"
 }

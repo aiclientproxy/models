@@ -6,10 +6,140 @@
   },
   "models": [
     {
-      "id": "granite-4.0-h-micro",
-      "name": "@cf/ibm-granite/granite-4.0-h-micro",
-      "family": "granite",
+      "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "name": "Llama 4 Scout 17B",
+      "family": "llama-4",
       "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.11,
+        "output": 0.34,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-04-05",
+      "is_latest": true
+    },
+    {
+      "id": "@cf/qwen/qwen3-32b",
+      "name": "Qwen3 32B",
+      "family": "qwen3",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.29,
+        "output": 0.59,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-12-23",
+      "is_latest": true
+    },
+    {
+      "id": "@cf/mistral/mistral-small-3.1-24b-instruct",
+      "name": "Mistral Small 3.1 24B",
+      "family": "mistral-small",
+      "tier": "mini",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.1,
+        "output": 0.3,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2024-09-01",
+      "is_latest": true
+    },
+    {
+      "id": "@cf/google/gemma-3-27b-it",
+      "name": "Gemma 3 27B",
+      "family": "gemma",
+      "tier": "pro",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0.35,
+        "output": 0.56,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 128000,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2025-03-12",
+      "is_latest": true
+    },
+    {
+      "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek R1 Distill Qwen 32B",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 16384
+      },
+      "status": "active",
+      "release_date": "2025-01-20",
+      "is_latest": true
+    },
+    {
+      "id": "@cf/ibm-granite/granite-4.0-h-micro",
+      "name": "Granite 4.0 Micro",
+      "family": "granite",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
         "tools": true,
@@ -25,42 +155,42 @@
       },
       "limits": {
         "context": 131000,
-        "max_output": 0
+        "max_output": 8192
       },
       "status": "active",
       "release_date": "2025-10-07",
-      "is_latest": false
+      "is_latest": true
     },
     {
-      "id": "gemma-sea-lion-v4-27b-it",
-      "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
-      "family": "gemma",
-      "tier": "pro",
+      "id": "@cf/baai/bge-large-en-v1.5",
+      "name": "BGE Large EN v1.5",
+      "family": "bge",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
-        "tools": true,
-        "streaming": true,
+        "tools": false,
+        "streaming": false,
         "json_mode": true,
-        "function_calling": true,
+        "function_calling": false,
         "reasoning": false
       },
       "pricing": {
-        "input": 0.35,
-        "output": 0.56,
+        "input": 0.01,
+        "output": 0,
         "currency": "USD"
       },
       "limits": {
-        "context": 128000,
-        "max_output": 0
+        "context": 512,
+        "max_output": 1024
       },
       "status": "active",
-      "release_date": "2025-09-23",
+      "release_date": "2023-09-12",
       "is_latest": false
     },
     {
-      "id": "aura-1",
-      "name": "@cf/deepgram/aura-1",
-      "family": "aura",
+      "id": "@cf/openai/whisper-large-v3-turbo",
+      "name": "Whisper Large v3 Turbo",
+      "family": "whisper",
       "tier": "pro",
       "capabilities": {
         "vision": false,
@@ -71,1767 +201,19 @@
         "reasoning": false
       },
       "pricing": {
-        "input": 0.015,
-        "output": 0.015,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2025-08-27",
-      "is_latest": false
-    },
-    {
-      "id": "lucid-origin",
-      "name": "@cf/leonardo/lucid-origin",
-      "family": "lucid-origin",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.007,
-        "output": 0.007,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2025-08-25",
-      "is_latest": false
-    },
-    {
-      "id": "phoenix-1.0",
-      "name": "@cf/leonardo/phoenix-1.0",
-      "family": "phoenix",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.0058,
-        "output": 0.0058,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2025-08-25",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-oss-20b",
-      "name": "@cf/openai/gpt-oss-20b",
-      "family": "gpt-oss",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.2,
-        "output": 0.3,
+        "input": 0.006,
+        "output": 0,
         "currency": "USD"
       },
       "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-08-04",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-oss-120b",
-      "name": "@cf/openai/gpt-oss-120b",
-      "family": "gpt-oss",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.35,
-        "output": 0.75,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-08-04",
-      "is_latest": false
-    },
-    {
-      "id": "nova-3",
-      "name": "@cf/deepgram/nova-3",
-      "family": "nova",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.0052,
-        "output": 0.0052,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2025-06-05",
-      "is_latest": false
-    },
-    {
-      "id": "qwen3-30b-a3b-fp8",
-      "name": "@cf/qwen/qwen3-30b-a3b-fp8",
-      "family": "qwen3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.051,
-        "output": 0.34,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32768,
-        "max_output": 0
-      },
-      "status": "active",
-      "release_date": "2025-04-30",
-      "is_latest": false
-    },
-    {
-      "id": "llama-4-scout-17b-16e-instruct",
-      "name": "@cf/meta/llama-4-scout-17b-16e-instruct",
-      "family": "llama-4-scout",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.27,
-        "output": 0.85,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131000,
-        "max_output": 131000
-      },
-      "status": "active",
-      "release_date": "2025-04-02",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-small-3.1-24b-instruct",
-      "name": "@cf/mistralai/mistral-small-3.1-24b-instruct",
-      "family": "mistral-small",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.35,
-        "output": 0.56,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2025-03-11",
-      "is_latest": false
-    },
-    {
-      "id": "qwq-32b",
-      "name": "@cf/qwen/qwq-32b",
-      "family": "qwq",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.66,
-        "output": 1,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 24000,
-        "max_output": 24000
-      },
-      "status": "active",
-      "release_date": "2025-03-05",
-      "is_latest": false
-    },
-    {
-      "id": "gemma-3-12b-it",
-      "name": "@cf/google/gemma-3-12b-it",
-      "family": "gemma-3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.35,
-        "output": 0.56,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 80000,
-        "max_output": 80000
-      },
-      "status": "active",
-      "release_date": "2025-03-01",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-r1-distill-qwen-32b",
-      "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.5,
-        "output": 4.88,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 80000,
-        "max_output": 80000
-      },
-      "status": "active",
-      "release_date": "2025-01-20",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.3-70b-instruct-fp8-fast",
-      "name": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-      "family": "llama-3.3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.29,
-        "output": 2.25,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 24000,
-        "max_output": 24000
-      },
-      "status": "active",
-      "release_date": "2024-12-06",
-      "is_latest": false
-    },
-    {
-      "id": "qwen2.5-coder-32b-instruct",
-      "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
-      "family": "qwen2.5-coder",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.66,
-        "output": 1,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32768,
-        "max_output": 32768
-      },
-      "status": "active",
-      "release_date": "2024-11-06",
-      "is_latest": false
-    },
-    {
-      "id": "whisper-large-v3-turbo",
-      "name": "@cf/openai/whisper-large-v3-turbo",
-      "family": "whisper-large",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.00051,
-        "output": 0.00051,
-        "currency": "USD"
+        "context": 448,
+        "max_output": 448
       },
       "status": "active",
       "release_date": "2024-10-01",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.2-11b-vision-instruct",
-      "name": "@cf/meta/llama-3.2-11b-vision-instruct",
-      "family": "llama-3.2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.049,
-        "output": 0.68,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2024-09-18",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.2-3b-instruct",
-      "name": "@cf/meta/llama-3.2-3b-instruct",
-      "family": "llama-3.2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.051,
-        "output": 0.34,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2024-09-18",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.2-1b-instruct",
-      "name": "@cf/meta/llama-3.2-1b-instruct",
-      "family": "llama-3.2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.027,
-        "output": 0.2,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 60000,
-        "max_output": 60000
-      },
-      "status": "active",
-      "release_date": "2024-09-18",
-      "is_latest": false
-    },
-    {
-      "id": "flux-1-schnell",
-      "name": "@cf/black-forest-labs/flux-1-schnell",
-      "family": "flux-1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.000053,
-        "output": 0.00011,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 2048,
-        "max_output": 0
-      },
-      "status": "active",
-      "release_date": "2024-07-31",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.1-8b-instruct-fp8",
-      "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
-      "family": "llama-3.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.15,
-        "output": 0.29,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32000,
-        "max_output": 32000
-      },
-      "status": "active",
-      "release_date": "2024-07-25",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.1-8b-instruct-awq",
-      "name": "@cf/meta/llama-3.1-8b-instruct-awq",
-      "family": "llama-3.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.12,
-        "output": 0.27,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2024-07-25",
-      "is_latest": false
-    },
-    {
-      "id": "llama-guard-3-8b",
-      "name": "@cf/meta/llama-guard-3-8b",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.48,
-        "output": 0.03,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 0
-      },
-      "status": "active",
-      "release_date": "2024-07-22",
-      "is_latest": false
-    },
-    {
-      "id": "melotts",
-      "name": "@cf/myshell-ai/melotts",
-      "family": "melotts",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.0002,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2024-07-19",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.1-8b-instruct",
-      "name": "@cf/meta/llama-3.1-8b-instruct",
-      "family": "llama-3.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.28,
-        "output": 0.83,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 7968,
-        "max_output": 7968
-      },
-      "status": "active",
-      "release_date": "2024-07-18",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.1-8b-instruct-fast",
-      "name": "@cf/meta/llama-3.1-8b-instruct-fast",
-      "family": "llama-3.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.045,
-        "output": 0.384,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 128000
-      },
-      "status": "active",
-      "release_date": "2024-07-18",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3.1-70b-instruct",
-      "name": "@cf/meta/llama-3.1-70b-instruct",
-      "family": "llama-3.1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.293,
-        "output": 2.253,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 24000,
-        "max_output": 24000
-      },
-      "status": "active",
-      "release_date": "2024-07-16",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3-8b-instruct-awq",
-      "name": "@cf/meta/llama-3-8b-instruct-awq",
-      "family": "llama-3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.12,
-        "output": 0.27,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2024-05-09",
-      "is_latest": false
-    },
-    {
-      "id": "llama-3-8b-instruct",
-      "name": "@cf/meta/llama-3-8b-instruct",
-      "family": "llama-3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.28,
-        "output": 0.83,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 7968,
-        "max_output": 7968
-      },
-      "status": "active",
-      "release_date": "2024-04-17",
-      "is_latest": false
-    },
-    {
-      "id": "gemma-2b-it-lora",
-      "name": "@cf/google/gemma-2b-it-lora",
-      "family": "gemma-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2024-04-02",
-      "is_latest": false
-    },
-    {
-      "id": "gemma-7b-it-lora",
-      "name": "@cf/google/gemma-7b-it-lora",
-      "family": "gemma",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 3500,
-        "max_output": 3500
-      },
-      "status": "active",
-      "release_date": "2024-04-02",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-7b-instruct-v0.2-lora",
-      "name": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 15000,
-        "max_output": 15000
-      },
-      "status": "active",
-      "release_date": "2024-04-01",
-      "is_latest": false
-    },
-    {
-      "id": "starling-lm-7b-beta",
-      "name": "@hf/nexusflow/starling-lm-7b-beta",
-      "family": "starling-lm",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2024-03-19",
-      "is_latest": false
-    },
-    {
-      "id": "hermes-2-pro-mistral-7b",
-      "name": "@hf/nousresearch/hermes-2-pro-mistral-7b",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 24000,
-        "max_output": 24000
-      },
-      "status": "active",
-      "release_date": "2024-03-11",
-      "is_latest": false
-    },
-    {
-      "id": "stable-diffusion-v1-5-inpainting",
-      "name": "@cf/runwayml/stable-diffusion-v1-5-inpainting",
-      "family": "stable-diffusion",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2024-02-27",
-      "is_latest": false
-    },
-    {
-      "id": "stable-diffusion-v1-5-img2img",
-      "name": "@cf/runwayml/stable-diffusion-v1-5-img2img",
-      "family": "stable-diffusion",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2024-02-27",
-      "is_latest": false
-    },
-    {
-      "id": "stable-diffusion-xl-lightning",
-      "name": "@cf/bytedance/stable-diffusion-xl-lightning",
-      "family": "stable-diffusion",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2024-02-20",
-      "is_latest": false
-    },
-    {
-      "id": "uform-gen2-qwen-500m",
-      "name": "@cf/unum/uform-gen2-qwen-500m",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2024-02-15",
-      "is_latest": false
-    },
-    {
-      "id": "gemma-7b-it",
-      "name": "@hf/google/gemma-7b-it",
-      "family": "gemma",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2024-02-13",
-      "is_latest": false
-    },
-    {
-      "id": "sqlcoder-7b-2",
-      "name": "@cf/defog/sqlcoder-7b-2",
-      "family": "sqlcoder",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 10000,
-        "max_output": 10000
-      },
-      "status": "active",
-      "release_date": "2024-02-05",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-math-7b-instruct",
-      "name": "@cf/deepseek-ai/deepseek-math-7b-instruct",
-      "family": "deepseek",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2024-02-05",
-      "is_latest": false
-    },
-    {
-      "id": "qwen1.5-14b-chat-awq",
-      "name": "@cf/qwen/qwen1.5-14b-chat-awq",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 7500,
-        "max_output": 7500
-      },
-      "status": "deprecated",
-      "release_date": "2024-02-03",
-      "is_latest": false
-    },
-    {
-      "id": "qwen1.5-7b-chat-awq",
-      "name": "@cf/qwen/qwen1.5-7b-chat-awq",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 20000,
-        "max_output": 20000
-      },
-      "status": "deprecated",
-      "release_date": "2024-02-03",
-      "is_latest": false
-    },
-    {
-      "id": "qwen1.5-0.5b-chat",
-      "name": "@cf/qwen/qwen1.5-0.5b-chat",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32000,
-        "max_output": 32000
-      },
-      "status": "deprecated",
-      "release_date": "2024-01-31",
-      "is_latest": false
-    },
-    {
-      "id": "qwen1.5-1.8b-chat",
-      "name": "@cf/qwen/qwen1.5-1.8b-chat",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32000,
-        "max_output": 32000
-      },
-      "status": "deprecated",
-      "release_date": "2024-01-30",
-      "is_latest": false
-    },
-    {
-      "id": "discolm-german-7b-v1-awq",
-      "name": "@cf/thebloke/discolm-german-7b-v1-awq",
-      "family": "discolm-german",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2024-01-18",
-      "is_latest": false
-    },
-    {
-      "id": "openchat-3.5-0106",
-      "name": "@cf/openchat/openchat-3.5-0106",
-      "family": "openchat",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-01-07",
-      "is_latest": false
-    },
-    {
-      "id": "tinyllama-1.1b-chat-v1.0",
-      "name": "@cf/tinyllama/tinyllama-1.1b-chat-v1.0",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 2048,
-        "max_output": 2048
-      },
-      "status": "deprecated",
-      "release_date": "2023-12-30",
-      "is_latest": false
-    },
-    {
-      "id": "phi-2",
-      "name": "@cf/microsoft/phi-2",
-      "family": "phi",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 2048,
-        "max_output": 2048
-      },
-      "status": "active",
-      "release_date": "2023-12-13",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-7b-instruct-v0.2",
-      "name": "@hf/mistral/mistral-7b-instruct-v0.2",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 3072,
-        "max_output": 4096
-      },
-      "status": "active",
-      "release_date": "2023-12-11",
-      "is_latest": false
-    },
-    {
-      "id": "llamaguard-7b-awq",
-      "name": "@hf/thebloke/llamaguard-7b-awq",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-12-11",
-      "is_latest": false
-    },
-    {
-      "id": "dreamshaper-8-lcm",
-      "name": "@cf/lykon/dreamshaper-8-lcm",
-      "family": "dreamshaper-8-lcm",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2023-12-06",
-      "is_latest": false
-    },
-    {
-      "id": "llava-1.5-7b-hf",
-      "name": "@cf/llava-hf/llava-1.5-7b-hf",
-      "family": "llava-1.5-7b-hf",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2023-12-05",
-      "is_latest": false
-    },
-    {
-      "id": "una-cybertron-7b-v2-bf16",
-      "name": "@cf/fblgit/una-cybertron-7b-v2-bf16",
-      "family": "una-cybertron",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 15000,
-        "max_output": 15000
-      },
-      "status": "deprecated",
-      "release_date": "2023-12-02",
-      "is_latest": false
-    },
-    {
-      "id": "neural-chat-7b-v3-1-awq",
-      "name": "@hf/thebloke/neural-chat-7b-v3-1-awq",
-      "family": "neural-chat-7b-v3",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-11-15",
-      "is_latest": false
-    },
-    {
-      "id": "whisper",
-      "name": "@cf/openai/whisper",
-      "family": "whisper",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.00045,
-        "output": 0.00045,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2023-11-07",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-coder-6.7b-base-awq",
-      "name": "@hf/thebloke/deepseek-coder-6.7b-base-awq",
-      "family": "deepseek-coder",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-11-05",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-coder-6.7b-instruct-awq",
-      "name": "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
-      "family": "deepseek-coder",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-11-05",
-      "is_latest": false
-    },
-    {
-      "id": "openhermes-2.5-mistral-7b-awq",
-      "name": "@hf/thebloke/openhermes-2.5-mistral-7b-awq",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-11-02",
-      "is_latest": false
-    },
-    {
-      "id": "zephyr-7b-beta-awq",
-      "name": "@hf/thebloke/zephyr-7b-beta-awq",
-      "family": "zephyr",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-10-27",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-7b-instruct-v0.1-awq",
-      "name": "@hf/thebloke/mistral-7b-instruct-v0.1-awq",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-09-27",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-7b-instruct-v0.1",
-      "name": "@cf/mistral/mistral-7b-instruct-v0.1",
-      "family": "mistral-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.11,
-        "output": 0.19,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 2824,
-        "max_output": 2824
-      },
-      "status": "active",
-      "release_date": "2023-09-27",
-      "is_latest": false
-    },
-    {
-      "id": "llama-2-7b-chat-int8",
-      "name": "@cf/meta/llama-2-7b-chat-int8",
-      "family": "llama-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.556,
-        "output": 6.667,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2023-09-25",
-      "is_latest": false
-    },
-    {
-      "id": "llama-2-13b-chat-awq",
-      "name": "@hf/thebloke/llama-2-13b-chat-awq",
-      "family": "llama-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-09-19",
-      "is_latest": false
-    },
-    {
-      "id": "llama-2-7b-chat-fp16",
-      "name": "@cf/meta/llama-2-7b-chat-fp16",
-      "family": "llama-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.56,
-        "output": 6.67,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "active",
-      "release_date": "2023-07-26",
-      "is_latest": false
-    },
-    {
-      "id": "stable-diffusion-xl-base-1.0",
-      "name": "@cf/stabilityai/stable-diffusion-xl-base-1.0",
-      "family": "stable-diffusion",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2023-07-25",
-      "is_latest": false
-    },
-    {
-      "id": "llama-2-7b-chat-hf-lora",
-      "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-      "family": "llama-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2023-07-13",
-      "is_latest": false
-    },
-    {
-      "id": "falcon-7b-instruct",
-      "name": "@cf/tiiuae/falcon-7b-instruct",
-      "family": "falcon-7b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 4096,
-        "max_output": 4096
-      },
-      "status": "deprecated",
-      "release_date": "2023-04-25",
-      "is_latest": false
-    },
-    {
-      "id": "whisper-tiny-en",
-      "name": "@cf/openai/whisper-tiny-en",
-      "family": "whisper",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2022-09-26",
-      "is_latest": false
-    },
-    {
-      "id": "resnet-50",
-      "name": "@cf/microsoft/resnet-50",
-      "family": "resnet",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.0000025,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2022-03-16",
-      "is_latest": false
-    },
-    {
-      "id": "bart-large-cnn",
-      "name": "@cf/facebook/bart-large-cnn",
-      "family": "bart-large-cnn",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2022-03-02",
-      "is_latest": false
-    },
-    {
-      "id": "m2m100-1.2b",
-      "name": "@cf/meta/m2m100-1.2b",
-      "family": "m2m100-1.2b",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.34,
-        "output": 0.34,
-        "currency": "USD"
-      },
-      "status": "active",
-      "release_date": "2022-03-02",
-      "is_latest": false
+      "is_latest": true
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.368Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "cloudflare.com"
 }

@@ -30,7 +30,7 @@
       },
       "status": "active",
       "release_date": "2025-12-23",
-      "is_latest": false
+      "is_latest": true
     },
     {
       "id": "accounts/fireworks/models/glm-4p7",
@@ -57,7 +57,7 @@
       },
       "status": "active",
       "release_date": "2025-12-22",
-      "is_latest": false
+      "is_latest": true
     },
     {
       "id": "accounts/fireworks/models/deepseek-v3p2",
@@ -84,7 +84,7 @@
       },
       "status": "active",
       "release_date": "2025-12-01",
-      "is_latest": false
+      "is_latest": true
     },
     {
       "id": "accounts/fireworks/models/kimi-k2-thinking",
@@ -110,112 +110,6 @@
       },
       "status": "active",
       "release_date": "2025-11-06",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/minimax-m2",
-      "name": "MiniMax-M2",
-      "family": "minimax",
-      "tier": "mini",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.15,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 192000,
-        "max_output": 192000
-      },
-      "status": "active",
-      "release_date": "2025-10-27",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/glm-4p6",
-      "name": "GLM 4.6",
-      "family": "glm-4",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.55,
-        "output": 2.19,
-        "cache_read": 0.28,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 198000,
-        "max_output": 198000
-      },
-      "status": "active",
-      "release_date": "2025-10-01",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/deepseek-v3p1",
-      "name": "DeepSeek V3.1",
-      "family": "deepseek-v3",
-      "tier": "max",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.56,
-        "output": 1.68,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 163840,
-        "max_output": 163840
-      },
-      "status": "active",
-      "release_date": "2025-08-21",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/gpt-oss-20b",
-      "name": "GPT OSS 20B",
-      "family": "gpt-oss",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.05,
-        "output": 0.2,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 32768
-      },
-      "status": "active",
-      "release_date": "2025-08-05",
       "is_latest": false
     },
     {
@@ -245,10 +139,10 @@
       "is_latest": false
     },
     {
-      "id": "accounts/fireworks/models/glm-4p5-air",
-      "name": "GLM 4.5 Air",
-      "family": "glm-4-air",
-      "tier": "pro",
+      "id": "accounts/fireworks/models/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "family": "gpt-oss",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
         "tools": true,
@@ -258,47 +152,21 @@
         "reasoning": true
       },
       "pricing": {
-        "input": 0.22,
-        "output": 0.88,
+        "input": 0.05,
+        "output": 0.2,
         "currency": "USD"
       },
       "limits": {
         "context": 131072,
-        "max_output": 131072
+        "max_output": 32768
       },
       "status": "active",
-      "release_date": "2025-08-01",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/glm-4p5",
-      "name": "GLM 4.5",
-      "family": "glm-4",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.55,
-        "output": 2.19,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 131072
-      },
-      "status": "active",
-      "release_date": "2025-07-29",
+      "release_date": "2025-08-05",
       "is_latest": false
     },
     {
       "id": "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct",
-      "name": "Qwen3 Coder 480B A35B Instruct",
+      "name": "Qwen3 Coder 480B",
       "family": "qwen3-coder",
       "tier": "pro",
       "capabilities": {
@@ -323,60 +191,8 @@
       "is_latest": false
     },
     {
-      "id": "accounts/fireworks/models/kimi-k2-instruct",
-      "name": "Kimi K2 Instruct",
-      "family": "kimi-k2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 1,
-        "output": 3,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 128000,
-        "max_output": 16384
-      },
-      "status": "active",
-      "release_date": "2025-07-11",
-      "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/deepseek-r1-0528",
-      "name": "Deepseek R1 05/28",
-      "family": "deepseek-r1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 3,
-        "output": 8,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 160000,
-        "max_output": 16384
-      },
-      "status": "active",
-      "release_date": "2025-05-28",
-      "is_latest": false
-    },
-    {
       "id": "accounts/fireworks/models/qwen3-235b-a22b",
-      "name": "Qwen3 235B-A22B",
+      "name": "Qwen3 235B",
       "family": "qwen3",
       "tier": "pro",
       "capabilities": {
@@ -399,34 +215,8 @@
       "status": "active",
       "release_date": "2025-04-29",
       "is_latest": false
-    },
-    {
-      "id": "accounts/fireworks/models/deepseek-v3-0324",
-      "name": "Deepseek V3 03-24",
-      "family": "deepseek-v3",
-      "tier": "max",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.9,
-        "output": 0.9,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 160000,
-        "max_output": 16384
-      },
-      "status": "active",
-      "release_date": "2025-03-24",
-      "is_latest": false
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.375Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "fireworks.ai"
 }

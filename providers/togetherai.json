@@ -6,32 +6,6 @@
   },
   "models": [
     {
-      "id": "essentialai/Rnj-1-Instruct",
-      "name": "Rnj-1 Instruct",
-      "family": "rnj",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.15,
-        "output": 0.15,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32768,
-        "max_output": 32768
-      },
-      "status": "active",
-      "release_date": "2025-12-05",
-      "is_latest": false
-    },
-    {
       "id": "moonshotai/Kimi-K2-Thinking",
       "name": "Kimi K2 Thinking",
       "family": "kimi-k2",
@@ -55,12 +29,12 @@
       },
       "status": "active",
       "release_date": "2025-11-06",
-      "is_latest": false
+      "is_latest": true
     },
     {
-      "id": "zai-org/GLM-4.6",
-      "name": "GLM 4.6",
-      "family": "glm-4.6",
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "name": "Kimi K2 Instruct",
+      "family": "kimi-k2",
       "tier": "pro",
       "capabilities": {
         "vision": false,
@@ -71,16 +45,16 @@
         "reasoning": false
       },
       "pricing": {
-        "input": 0.6,
-        "output": 2.2,
+        "input": 1,
+        "output": 3,
         "currency": "USD"
       },
       "limits": {
-        "context": 200000,
+        "context": 131072,
         "max_output": 32768
       },
       "status": "active",
-      "release_date": "2025-09-30",
+      "release_date": "2025-07-14",
       "is_latest": false
     },
     {
@@ -107,6 +81,32 @@
       },
       "status": "active",
       "release_date": "2025-08-21",
+      "is_latest": true
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "name": "DeepSeek R1",
+      "family": "deepseek-r1",
+      "tier": "pro",
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": false,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 7,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 163839,
+        "max_output": 12288
+      },
+      "status": "active",
+      "release_date": "2024-12-26",
       "is_latest": false
     },
     {
@@ -137,7 +137,7 @@
     },
     {
       "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
-      "name": "Qwen3 Coder 480B A35B Instruct",
+      "name": "Qwen3 Coder 480B",
       "family": "qwen3-coder",
       "tier": "pro",
       "capabilities": {
@@ -159,84 +159,6 @@
       },
       "status": "active",
       "release_date": "2025-07-23",
-      "is_latest": false
-    },
-    {
-      "id": "moonshotai/Kimi-K2-Instruct",
-      "name": "Kimi K2 Instruct",
-      "family": "kimi-k2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 1,
-        "output": 3,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 32768
-      },
-      "status": "active",
-      "release_date": "2025-07-14",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-V3",
-      "name": "DeepSeek V3",
-      "family": "deepseek-v3",
-      "tier": "max",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 1.25,
-        "output": 1.25,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 12288
-      },
-      "status": "active",
-      "release_date": "2025-01-20",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-R1",
-      "name": "DeepSeek R1",
-      "family": "deepseek-r1",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 3,
-        "output": 7,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 163839,
-        "max_output": 12288
-      },
-      "status": "active",
-      "release_date": "2024-12-26",
       "is_latest": false
     },
     {
@@ -266,6 +188,6 @@
       "is_latest": false
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.365Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "together.ai"
 }

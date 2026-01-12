@@ -54,12 +54,6 @@
       "internal_name": "CLAUDE_SONNET_4_20250514_V1_0",
       "provider": "anthropic",
       "description": "Claude Sonnet 4 via Kiro"
-    },
-    "claude-3-7-sonnet-20250219": {
-      "actual": "claude-3-7-sonnet-20250219",
-      "internal_name": "CLAUDE_3_7_SONNET_20250219_V1_0",
-      "provider": "anthropic",
-      "description": "Claude 3.7 Sonnet via Kiro"
     }
   },
   "updated_at": "2026-01-07T00:00:00Z"

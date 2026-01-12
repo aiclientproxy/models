@@ -6,176 +6,8 @@
   },
   "models": [
     {
-      "id": "cogito-2.1:671b-cloud",
-      "name": "Cogito 2.1 671B",
-      "family": "cogito-2.1:671b-cloud",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 160000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-11-19",
-      "is_latest": false
-    },
-    {
-      "id": "gemini-3-pro-preview:latest",
-      "name": "Gemini 3 Pro Preview",
-      "family": "gemini-pro",
-      "tier": "mini",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 1000000,
-        "max_output": 64000
-      },
-      "status": "active",
-      "release_date": "2025-11-18",
-      "is_latest": true
-    },
-    {
-      "id": "kimi-k2-thinking:cloud",
-      "name": "Kimi K2 Thinking",
-      "family": "kimi-k2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "limits": {
-        "context": 256000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-11-06",
-      "is_latest": false
-    },
-    {
-      "id": "minimax-m2:cloud",
-      "name": "MiniMax M2",
-      "family": "minimax",
-      "tier": "mini",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-10-27",
-      "is_latest": false
-    },
-    {
-      "id": "glm-4.6:cloud",
-      "name": "GLM-4.6",
-      "family": "glm-4.6",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-09-29",
-      "is_latest": false
-    },
-    {
-      "id": "qwen3-vl-235b-cloud",
-      "name": "Qwen3-VL 235B Instruct",
-      "family": "qwen3-vl",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-09-22",
-      "is_latest": false
-    },
-    {
-      "id": "qwen3-vl-235b-instruct-cloud",
-      "name": "Qwen3-VL 235B Instruct",
-      "family": "qwen3-vl",
-      "tier": "pro",
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 200000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-09-22",
-      "is_latest": false
-    },
-    {
-      "id": "kimi-k2:1t-cloud",
-      "name": "Kimi K2",
-      "family": "kimi-k2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "limits": {
-        "context": 256000,
-        "max_output": 8192
-      },
-      "status": "active",
-      "release_date": "2025-09-05",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-v3.1:671b-cloud",
-      "name": "DeepSeek-V3.1 671B",
+      "id": "deepseek-v3.2",
+      "name": "DeepSeek V3.2",
       "family": "deepseek-v3",
       "tier": "max",
       "capabilities": {
@@ -186,18 +18,23 @@
         "function_calling": true,
         "reasoning": true
       },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
       "limits": {
-        "context": 160000,
-        "max_output": 8192
+        "context": 163840,
+        "max_output": 65536
       },
       "status": "active",
-      "release_date": "2025-08-21",
-      "is_latest": false
+      "release_date": "2025-12-01",
+      "is_latest": true
     },
     {
-      "id": "gpt-oss:120b-cloud",
-      "name": "GPT-OSS 120B",
-      "family": "gpt-oss:120b",
+      "id": "deepseek-r1",
+      "name": "DeepSeek R1",
+      "family": "deepseek-r1",
       "tier": "pro",
       "capabilities": {
         "vision": false,
@@ -207,18 +44,23 @@
         "function_calling": true,
         "reasoning": true
       },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
       "limits": {
-        "context": 200000,
-        "max_output": 8192
+        "context": 163840,
+        "max_output": 65536
       },
       "status": "active",
-      "release_date": "2025-08-05",
-      "is_latest": false
+      "release_date": "2025-01-20",
+      "is_latest": true
     },
     {
-      "id": "gpt-oss:20b-cloud",
-      "name": "GPT-OSS 20B",
-      "family": "gpt-oss:20b",
+      "id": "qwen3-235b",
+      "name": "Qwen3 235B",
+      "family": "qwen3",
       "tier": "pro",
       "capabilities": {
         "vision": false,
@@ -228,36 +70,72 @@
         "function_calling": true,
         "reasoning": true
       },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
       "limits": {
-        "context": 200000,
-        "max_output": 8192
+        "context": 131072,
+        "max_output": 32768
       },
       "status": "active",
-      "release_date": "2025-08-05",
-      "is_latest": false
+      "release_date": "2025-04-29",
+      "is_latest": true
     },
     {
-      "id": "qwen3-coder:480b-cloud",
-      "name": "Qwen3 Coder 480B",
-      "family": "qwen3-coder",
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "family": "llama-4",
       "tier": "pro",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "streaming": true,
         "json_mode": true,
         "function_calling": true,
         "reasoning": false
       },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
       "limits": {
-        "context": 200000,
+        "context": 131072,
         "max_output": 8192
       },
       "status": "active",
-      "release_date": "2025-07-22",
-      "is_latest": false
+      "release_date": "2025-04-05",
+      "is_latest": true
+    },
+    {
+      "id": "mistral-large",
+      "name": "Mistral Large",
+      "family": "mistral-large",
+      "tier": "max",
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 262144,
+        "max_output": 262144
+      },
+      "status": "active",
+      "release_date": "2024-11-01",
+      "is_latest": true
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.357Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "ollama.com"
 }

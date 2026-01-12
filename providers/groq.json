@@ -29,33 +29,7 @@
       },
       "status": "active",
       "release_date": "2025-09-05",
-      "is_latest": false
-    },
-    {
-      "id": "openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
-      "family": "gpt-oss",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.075,
-        "output": 0.3,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 65536
-      },
-      "status": "active",
-      "release_date": "2025-08-05",
-      "is_latest": false
+      "is_latest": true
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -84,29 +58,29 @@
       "is_latest": false
     },
     {
-      "id": "moonshotai/kimi-k2-instruct",
-      "name": "Kimi K2 Instruct",
-      "family": "kimi-k2",
-      "tier": "pro",
+      "id": "openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "family": "gpt-oss",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
         "tools": true,
         "streaming": true,
         "json_mode": true,
         "function_calling": true,
-        "reasoning": false
+        "reasoning": true
       },
       "pricing": {
-        "input": 1,
-        "output": 3,
+        "input": 0.075,
+        "output": 0.3,
         "currency": "USD"
       },
       "limits": {
         "context": 131072,
-        "max_output": 16384
+        "max_output": 65536
       },
-      "status": "deprecated",
-      "release_date": "2025-07-14",
+      "status": "active",
+      "release_date": "2025-08-05",
       "is_latest": false
     },
     {
@@ -165,7 +139,7 @@
       "id": "meta-llama/llama-guard-4-12b",
       "name": "Llama Guard 4 12B",
       "family": "llama",
-      "tier": "pro",
+      "tier": "mini",
       "capabilities": {
         "vision": true,
         "tools": false,
@@ -185,58 +159,6 @@
       },
       "status": "active",
       "release_date": "2025-04-05",
-      "is_latest": false
-    },
-    {
-      "id": "mistral-saba-24b",
-      "name": "Mistral Saba 24B",
-      "family": "mistral",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.79,
-        "output": 0.79,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 32768,
-        "max_output": 32768
-      },
-      "status": "deprecated",
-      "release_date": "2025-02-06",
-      "is_latest": false
-    },
-    {
-      "id": "deepseek-r1-distill-llama-70b",
-      "name": "DeepSeek R1 Distill Llama 70B",
-      "family": "deepseek-r1-distill-llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.75,
-        "output": 0.99,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2025-01-20",
       "is_latest": false
     },
     {
@@ -292,36 +214,10 @@
       "is_latest": false
     },
     {
-      "id": "qwen-qwq-32b",
-      "name": "Qwen QwQ 32B",
-      "family": "qwq",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.29,
-        "output": 0.39,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 16384
-      },
-      "status": "deprecated",
-      "release_date": "2024-11-27",
-      "is_latest": false
-    },
-    {
       "id": "llama-3.1-8b-instant",
       "name": "Llama 3.1 8B Instant",
       "family": "llama-3.1",
-      "tier": "pro",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
         "tools": true,
@@ -342,112 +238,8 @@
       "status": "active",
       "release_date": "2024-07-23",
       "is_latest": false
-    },
-    {
-      "id": "llama-guard-3-8b",
-      "name": "Llama Guard 3 8B",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": false,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.2,
-        "output": 0.2,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-07-23",
-      "is_latest": false
-    },
-    {
-      "id": "gemma2-9b-it",
-      "name": "Gemma 2 9B",
-      "family": "gemma-2",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.2,
-        "output": 0.2,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-06-27",
-      "is_latest": false
-    },
-    {
-      "id": "llama3-8b-8192",
-      "name": "Llama 3 8B",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.05,
-        "output": 0.08,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-04-18",
-      "is_latest": false
-    },
-    {
-      "id": "llama3-70b-8192",
-      "name": "Llama 3 70B",
-      "family": "llama",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.59,
-        "output": 0.79,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 8192,
-        "max_output": 8192
-      },
-      "status": "deprecated",
-      "release_date": "2024-04-18",
-      "is_latest": false
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.359Z",
-  "source": "models.dev"
+  "updated_at": "2026-01-12T00:00:00.000Z",
+  "source": "groq.com"
 }

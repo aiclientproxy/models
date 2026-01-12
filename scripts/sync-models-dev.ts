@@ -3,6 +3,12 @@
  *
  * This script fetches model data from https://models.dev/api.json
  * and converts it to our JSON format, saving to providers/*.json
+ *
+ * Simplification rules (--slim mode):
+ * - Keep only the latest model per family (based on release_date or is_latest)
+ * - For families without release_date, keep models with "latest" in name/id
+ * - Prioritize active status models
+ * - Keep max 2 models per family (latest + one dated version)
  */
 
 import * as fs from "fs/promises";
@@ -11,6 +17,10 @@ import * as path from "path";
 const MODELS_DEV_API = "https://models.dev/api.json";
 const PROVIDERS_DIR = path.join(import.meta.dirname, "..", "providers");
 const INDEX_FILE = path.join(import.meta.dirname, "..", "index.json");
+
+// Parse command line arguments
+const args = process.argv.slice(2);
+const SLIM_MODE = args.includes("--slim");
 
 // Types for models.dev API response
 interface ModelsDevCost {
@@ -230,8 +240,103 @@ function mergeModels(newModels: Model[], existingModels: Model[]): Model[] {
   });
 }
 
+/**
+ * Simplify models list by keeping only the most important models per family
+ * Rules:
+ * 1. Group models by family
+ * 2. For each family, keep:
+ *    - The model marked as is_latest (or with "latest" in name)
+ *    - The most recent dated version (by release_date)
+ * 3. For models without family, keep if they are latest or have high tier
+ */
+function simplifyModels(models: Model[]): Model[] {
+  // Group by family
+  const familyGroups = new Map<string, Model[]>();
+  const noFamily: Model[] = [];
+
+  for (const model of models) {
+    if (model.family) {
+      const group = familyGroups.get(model.family) || [];
+      group.push(model);
+      familyGroups.set(model.family, group);
+    } else {
+      noFamily.push(model);
+    }
+  }
+
+  const result: Model[] = [];
+
+  // Process each family
+  for (const [, familyModels] of familyGroups) {
+    // Sort by: is_latest first, then by release_date (newest first), then by tier
+    familyModels.sort((a, b) => {
+      // is_latest takes priority
+      if (a.is_latest && !b.is_latest) return -1;
+      if (!a.is_latest && b.is_latest) return 1;
+
+      // Then by release_date (newest first)
+      if (a.release_date && b.release_date) {
+        const cmp = b.release_date.localeCompare(a.release_date);
+        if (cmp !== 0) return cmp;
+      }
+      if (a.release_date && !b.release_date) return -1;
+      if (!a.release_date && b.release_date) return 1;
+
+      // Then by tier (max > pro > mini)
+      const tierOrder = { max: 0, pro: 1, mini: 2 };
+      return tierOrder[a.tier] - tierOrder[b.tier];
+    });
+
+    // Keep max 2 models per family: latest + one dated version
+    const kept: Model[] = [];
+    let hasLatest = false;
+    let hasDated = false;
+
+    for (const model of familyModels) {
+      if (kept.length >= 2) break;
+
+      const isLatestModel =
+        model.is_latest ||
+        model.id.toLowerCase().includes("latest") ||
+        model.name.toLowerCase().includes("latest");
+
+      if (isLatestModel && !hasLatest) {
+        kept.push(model);
+        hasLatest = true;
+      } else if (!isLatestModel && !hasDated) {
+        kept.push(model);
+        hasDated = true;
+      } else if (!hasLatest && !hasDated) {
+        // If no latest found yet, keep the first one
+        kept.push(model);
+        hasDated = true;
+      }
+    }
+
+    result.push(...kept);
+  }
+
+  // For models without family, keep only latest or high-tier ones
+  for (const model of noFamily) {
+    const isLatest =
+      model.is_latest ||
+      model.id.toLowerCase().includes("latest") ||
+      model.name.toLowerCase().includes("latest");
+    const isHighTier = model.tier === "max" || model.tier === "pro";
+
+    if (isLatest || isHighTier) {
+      result.push(model);
+    }
+  }
+
+  return result;
+}
+
 async function main() {
   console.log("🔄 Fetching models from models.dev...");
+  if (SLIM_MODE) {
+    console.log("📦 Slim mode enabled - keeping only main models per family");
+  }
 
   const response = await fetch(MODELS_DEV_API);
   if (!response.ok) {
@@ -248,11 +353,17 @@ async function main() {
   let totalModels = 0;
 
   for (const [providerId, provider] of Object.entries(data)) {
-    const models = Object.values(provider.models).map(convertModel);
+    let models = Object.values(provider.models).map(convertModel);
 
     if (models.length === 0) {
       console.log(`⏭️  Skipping ${providerId} (no models)`);
       continue;
+    }
+
+    // Apply simplification in slim mode
+    const originalCount = models.length;
+    if (SLIM_MODE) {
+      models = simplifyModels(models);
     }
 
     // Load existing data to preserve manual fields
@@ -286,8 +397,14 @@ async function main() {
     await fs.writeFile(filePath, JSON.stringify(providerData, null, 2) + "\n");
 
     providerIds.push(providerId);
-    totalModels += models.length;
-    console.log(`✅ ${providerId}: ${models.length} models`);
+    totalModels += mergedModels.length;
+    if (SLIM_MODE && originalCount !== mergedModels.length) {
+      console.log(
+        `✅ ${providerId}: ${mergedModels.length} models (simplified from ${originalCount})`
+      );
+    } else {
+      console.log(`✅ ${providerId}: ${mergedModels.length} models`);
+    }
   }
 
   // Update index.json
