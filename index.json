@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-01-06T10:24:55.378Z",
+  "updated_at": "2026-01-13T01:24:27.520Z",
   "providers": [
     "abacus",
     "aihubmix",
@@ -22,9 +22,11 @@
     "deepseek",
     "fastrouter",
     "fireworks-ai",
+    "firmware",
     "friendli",
     "github-copilot",
     "github-models",
+    "gitlab",
     "google",
     "google-vertex",
     "google-vertex-anthropic",
@@ -56,6 +58,7 @@
     "ovhcloud",
     "perplexity",
     "poe",
+    "privatemode-ai",
     "requesty",
     "sap-ai-core",
     "scaleway",
@@ -68,6 +71,7 @@
     "v0",
     "venice",
     "vercel",
+    "vivgrid",
     "vultr",
     "wandb",
     "xai",
@@ -78,7 +82,7 @@
     "zhipuai",
     "zhipuai-coding-plan"
   ],
-  "total_models": 2028,
+  "total_models": 2148,
   "sources": {
     "models_dev": "https://models.dev/api.json",
     "manual": []

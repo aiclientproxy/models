@@ -1,17 +1,17 @@
 {
   "$schema": "../schema/model.schema.json",
   "provider": {
-    "id": "kimi-for-coding",
-    "name": "Kimi For Coding"
+    "id": "vivgrid",
+    "name": "Vivgrid"
   },
   "models": [
     {
-      "id": "kimi-k2-thinking",
-      "name": "Kimi K2 Thinking",
-      "family": "kimi-k2",
+      "id": "gpt-5.1-codex",
+      "name": "GPT-5.1 Codex",
+      "family": "gpt-5-codex",
       "tier": "pro",
       "capabilities": {
-        "vision": false,
+        "vision": true,
         "tools": true,
         "streaming": true,
         "json_mode": true,
@@ -19,21 +19,20 @@
         "reasoning": true
       },
       "pricing": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0,
-        "cache_write": 0,
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125,
         "currency": "USD"
       },
       "limits": {
-        "context": 262144,
-        "max_output": 32768
+        "context": 400000,
+        "max_output": 128000
       },
       "status": "active",
-      "release_date": "2025-11",
+      "release_date": "2025-11-13",
       "is_latest": false
     }
   ],
-  "updated_at": "2026-01-13T01:24:27.477Z",
+  "updated_at": "2026-01-13T01:24:27.476Z",
   "source": "models.dev"
 }

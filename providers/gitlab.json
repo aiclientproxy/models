@@ -1,13 +1,42 @@
 {
   "$schema": "../schema/model.schema.json",
   "provider": {
-    "id": "cerebras",
-    "name": "Cerebras"
+    "id": "gitlab",
+    "name": "GitLab Duo"
   },
   "models": [
     {
-      "id": "zai-glm-4.7",
-      "name": "Z.AI GLM-4.7",
+      "id": "duo-chat-opus-4-5",
+      "name": "Agentic Chat (Claude Opus 4.5)",
+      "family": "claude-opus",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": false
+      },
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 200000,
+        "max_output": 4096
+      },
+      "status": "active",
+      "release_date": "2026-01-08",
+      "is_latest": false
+    },
+    {
+      "id": "duo-chat-sonnet-4-5",
+      "name": "Agentic Chat (Claude Sonnet 4.5)",
+      "family": "claude-sonnet",
       "tier": "pro",
       "capabilities": {
         "vision": false,
@@ -25,18 +54,18 @@
         "currency": "USD"
       },
       "limits": {
-        "context": 131072,
-        "max_output": 40000
+        "context": 200000,
+        "max_output": 4096
       },
       "status": "active",
-      "release_date": "2026-01-10",
+      "release_date": "2026-01-08",
       "is_latest": false
     },
     {
-      "id": "zai-glm-4.6",
-      "name": "Z.AI GLM-4.6",
-      "family": "glm-4.6",
-      "tier": "pro",
+      "id": "duo-chat-haiku-4-5",
+      "name": "Agentic Chat (Claude Haiku 4.5)",
+      "family": "claude-haiku",
+      "tier": "mini",
       "capabilities": {
         "vision": false,
         "tools": true,
@@ -53,66 +82,14 @@
         "currency": "USD"
       },
       "limits": {
-        "context": 131072,
-        "max_output": 40960
+        "context": 200000,
+        "max_output": 4096
       },
       "status": "active",
-      "release_date": "2025-11-05",
-      "is_latest": false
-    },
-    {
-      "id": "gpt-oss-120b",
-      "name": "GPT OSS 120B",
-      "family": "gpt-oss",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": true
-      },
-      "pricing": {
-        "input": 0.25,
-        "output": 0.69,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131072,
-        "max_output": 32768
-      },
-      "status": "active",
-      "release_date": "2025-08-05",
-      "is_latest": false
-    },
-    {
-      "id": "qwen-3-235b-a22b-instruct-2507",
-      "name": "Qwen 3 235B Instruct",
-      "family": "qwen",
-      "tier": "pro",
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "streaming": true,
-        "json_mode": true,
-        "function_calling": true,
-        "reasoning": false
-      },
-      "pricing": {
-        "input": 0.6,
-        "output": 1.2,
-        "currency": "USD"
-      },
-      "limits": {
-        "context": 131000,
-        "max_output": 32000
-      },
-      "status": "active",
-      "release_date": "2025-07-22",
+      "release_date": "2026-01-08",
       "is_latest": false
     }
   ],
-  "updated_at": "2026-01-13T01:24:27.519Z",
+  "updated_at": "2026-01-13T01:24:27.512Z",
   "source": "models.dev"
 }

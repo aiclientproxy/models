@@ -6,6 +6,32 @@
   },
   "models": [
     {
+      "id": "solar-pro3",
+      "name": "solar-pro3",
+      "family": "solar-pro",
+      "tier": "max",
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "streaming": true,
+        "json_mode": true,
+        "function_calling": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "currency": "USD"
+      },
+      "limits": {
+        "context": 131072,
+        "max_output": 8192
+      },
+      "status": "active",
+      "release_date": "2026-01",
+      "is_latest": false
+    },
+    {
       "id": "solar-pro2",
       "name": "solar-pro2",
       "family": "solar-pro",
@@ -58,6 +84,6 @@
       "is_latest": false
     }
   ],
-  "updated_at": "2026-01-06T10:24:55.359Z",
+  "updated_at": "2026-01-13T01:24:27.463Z",
   "source": "models.dev"
 }
